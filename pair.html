@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main_sidebar.css"/>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,62 +16,89 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Eunbyung Park</a>
+      <a class="navbar-brand" href="index.html">Ming Wen</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a href="index.html">Home</a></li>
       <li class="active"><a href="pair.html">Team</a></li>
       <li><a href="publication.html">Publications</a></li>
       <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="service.html">Service</a></li>
     </ul>
   </div>
 </nav>
 
   <div id="main" style="max-width: 900px;">
-          <div>
-                  <h2>Visual and Scientific Computing Lab</h2>
-                  <p>We are a group of passionate people from various backgrounds to pursue cutting-edge research on visual and scientific computing. You can find our research focus in the recently published papers. We are proud of having built a collaborative, friendly, and horizontal culture, aiming for high-quality research. If you think you are good fit for our team, feel free to reach out, visit, and talk to us!</p>
-          </div>
-          <div>
-                  <h3>Principal Investigator</h3>
-                  <ul>
-                          <li><a target="_blank" href="index.html">Eunbyung Park</a></li>
-                  </ul>
-          </div>
-          <div>
-                  <h3>Research Professors</h3>
-                  <ul>
-                          <li>Usman Ali (2022.09 -)</li>
-                  </ul>
-          </div>
+      <div>
+<!--          <h1>Students</h1>-->
 
-          <div>
-                  <h3>Graduate Students</h3>
-                  <ul>
-                          <li>Joo Chan Lee (MS/PhD combined, 2020.03 - ), co-advised by <a href="https://iris.skku.edu/authors/admin/">Jong Hwan Ko</a></li>
-                          <li>Xiangyu Sun (PhD, 2022.09 - )</li>
-                          <li>Younggeun Lee (MS/PhD combined, 2021.09 - )</li>
-                          <li>Junwoo Cho (MS, 2021.09 - )</li>
-                          <li>Sanghyeon Kim (MS, 2021.09 - )</li>
-                          <li>Hanbit Yoon (MS, 2021.09 - ), co-advised by <a href="https://www.linkedin.com/in/joonheechoi/">Joon Hee Choi</a></li>
-                          <li>Namgyu Kang (MS, 2022.03 - )</li>
-                          <li>Seungtae Nam (MS, 2022.03 - )</li>
-                          <li>Hyunmo Yang (MS, 2022.03 - )</li>
-                          <li>Byeonghyeon Lee (MS, 2022.09 - )</li>
-                          <li>Howoong Lee (MS, 2022.09 - ), industrial scholars program from Hanwha Techwin.</li>
-                          <li>Younghyun Kim (MS, 2023.03 - )</li>
-                          <li>Dohyun Kim (MS, 2023.03 - )</li>
-                          <li>Geunmin Hwang (MS, 2023.03 - )</li>
-                          <li>Yougin Park (MS, 2023.03 - ), part time industrial scholars program from Samsung Electronics.</li>
-                  </ul>
-          </div>
+          <h1>PhD Students</h1>
 
-          <div>
-                  <h3>Alumni</h3>
-                  <ul>
-                          <li>Daniel Rho (MS, 2020.09 - 2022.08), co-advised by <a href="https://iris.skku.edu/authors/admin/">Jong Hwan Ko</a>, currently at KT</li>
-                  </ul>
-          </div>
+          <ul>
+              <li><strong>Xiaohu Du</strong>, PhD Student (<span style="color: #2ca25f">Fall 2021</span>): working on analysis of neural network models</li>
+              <li><strong>Zifan Xie</strong>, PhD Student (<span style="color: #2ca25f">Fall 2020</span>): working on patch analysis and bytecode analysis </li>
+          </ul>
+
+          <h1>Master Students</h1>
+          <ul>
+              <li><strong>Zongze Jiang</strong>, Master Student (<span style="color: #2ca25f">Fall 2022</span>) </li>
+              <li><strong>Xiaochen Guo</strong>, Master Student (<span style="color: #2ca25f">Fall 2022</span>) </li>
+              <li><strong>Jiahao Zhu</strong>, Master Student (<span style="color: #2ca25f">Fall 2022</span>) </li>
+              <li><strong>Yulun Wu</strong>, Master Student (<span style="color: #2ca25f">Fall 2021</span>): working on static analysis and fuzzing </li>
+              <li><strong>Zeliang Yu</strong>, Master Student (<span style="color: #2ca25f">Fall 2021</span>): working on vulnerability analysis for software ecosystems </li>
+              <li><strong>Haoxiang Jia</strong>, Master Student (<span style="color: #2ca25f">Fall 2021</span>): working on JVM Fuzzing </li>
+              <li><strong>Kang Chen</strong>, Master Student (<span style="color: #2ca25f">Fall 2021</span>): working on kernel security </li>
+              <li><strong>Jing Yang</strong>, Master Student (<span style="color: #2ca25f">Fall 2020</span>): working on compiler testing (co-supervised with Yibiao Yang)</li>
+              <li><strong>Maolin Sun</strong>, Master Student (<span style="color: #2ca25f">Fall 2020</span>): working on SMT solver testing (co-supervised with Yibiao Yang)</li>
+              <li><strong>Yuting Zhang</strong>, Master Student (<span style="color: #2ca25f">Fall 2020</span>): working on deep learning for vulnerability detection </li>
+              <li><strong>Yixin Yang</strong>, Master Student (<span style="color: #2ca25f">Fall 2020</span>): working on code embedding for bug detection </li>
+              <li><strong>Yongcong Wang</strong>, Master Student (<span style="color: #2ca25f">Fall 2020</span>): working on fuzzing for JS engines </li>
+          </ul>
+      </div>
+<!--          <div>-->
+<!--                  <h2>Visual and Scientific Computing Lab</h2>-->
+<!--                  <p>We are a group of passionate people from various backgrounds to pursue cutting-edge research on visual and scientific computing. You can find our research focus in the recently published papers. We are proud of having built a collaborative, friendly, and horizontal culture, aiming for high-quality research. If you think you are good fit for our team, feel free to reach out, visit, and talk to us!</p>-->
+<!--          </div>-->
+<!--          <div>-->
+<!--                  <h3>Principal Investigator</h3>-->
+<!--                  <ul>-->
+<!--                          <li><a target="_blank" href="index.html">Eunbyung Park</a></li>-->
+<!--                  </ul>-->
+<!--          </div>-->
+<!--          <div>-->
+<!--                  <h3>Research Professors</h3>-->
+<!--                  <ul>-->
+<!--                          <li>Usman Ali (2022.09 -)</li>-->
+<!--                  </ul>-->
+<!--          </div>-->
+
+<!--          <div>-->
+<!--                  <h3>Graduate Students</h3>-->
+<!--                  <ul>-->
+<!--                          <li>Joo Chan Lee (MS/PhD combined, 2020.03 - ), co-advised by <a href="https://iris.skku.edu/authors/admin/">Jong Hwan Ko</a></li>-->
+<!--                          <li>Xiangyu Sun (PhD, 2022.09 - )</li>-->
+<!--                          <li>Younggeun Lee (MS/PhD combined, 2021.09 - )</li>-->
+<!--                          <li>Junwoo Cho (MS, 2021.09 - )</li>-->
+<!--                          <li>Sanghyeon Kim (MS, 2021.09 - )</li>-->
+<!--                          <li>Hanbit Yoon (MS, 2021.09 - ), co-advised by <a href="https://www.linkedin.com/in/joonheechoi/">Joon Hee Choi</a></li>-->
+<!--                          <li>Namgyu Kang (MS, 2022.03 - )</li>-->
+<!--                          <li>Seungtae Nam (MS, 2022.03 - )</li>-->
+<!--                          <li>Hyunmo Yang (MS, 2022.03 - )</li>-->
+<!--                          <li>Byeonghyeon Lee (MS, 2022.09 - )</li>-->
+<!--                          <li>Howoong Lee (MS, 2022.09 - ), industrial scholars program from Hanwha Techwin.</li>-->
+<!--                          <li>Younghyun Kim (MS, 2023.03 - )</li>-->
+<!--                          <li>Dohyun Kim (MS, 2023.03 - )</li>-->
+<!--                          <li>Geunmin Hwang (MS, 2023.03 - )</li>-->
+<!--                          <li>Yougin Park (MS, 2023.03 - ), part time industrial scholars program from Samsung Electronics.</li>-->
+<!--                  </ul>-->
+<!--          </div>-->
+
+<!--          <div>-->
+<!--                  <h3>Alumni</h3>-->
+<!--                  <ul>-->
+<!--                          <li>Daniel Rho (MS, 2020.09 - 2022.08), co-advised by <a href="https://iris.skku.edu/authors/admin/">Jong Hwan Ko</a>, currently at KT</li>-->
+<!--                  </ul>-->
+<!--          </div>-->
   </div>
 </body>
 </html>
