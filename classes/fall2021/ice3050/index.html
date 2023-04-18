@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+
+		<title>ICE3050 Deep Learning</title>
+
+		<link rel="canonical" href="https://silverbottlep.github.io/classes/fall2021/ice3050/">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css" >
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<link rel="shortcut icon" href="/classes/fall2021/ice3050/images/skku_icon.png">
+
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+						tex2jax: {
+							inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+							processEscapes: true
+						}
+					});
+		</script>
+	</head>
+
+
+	<body>
+		<nav class="navbar">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/classes/fall2021/ice3050"><h1>ICE 3050 Deep Learning, Fall 2021</h1></a> </br>
+				<a class="navbar-brand" href="https://ice.skku.edu/ice/index.do"><h3>College of Information and Communication Engineering</h3></a> </br>
+				<a class="navbar-brand" href="https://www.skku.edu/skku/index.do"><h3>SungKyunKwan University</h3></a> </br>
+				<a class="navbar-brand"><h3>Time: TBD, Delivery Format: On/Offline Mixed</h3></a> </br>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="content">
+
+				<p><a name="info"></a></p>
+				<div>
+
+					<h2 id="course-description">Course Description</h2>
+
+					<p>Deep learning, which is considered as a subset of machine learning, is a core technology that has revolutionized entire Artificial Intelligence (AI) fields. It has achieved remarkable success in various applications, such as computer vision, natural language processing, speech recognition, robotics, biology, medicine, to name a few. This course will start from presenting the basic theory and practice of deep learning, and introduce rapidly changing techniques. This course also focuses on practical aspects of deep learning, which requires students to perform final course projects to gain a deeper knowledge through active exploration of various problems.</p>
+
+					<div class="row">
+						<div class="col-md-2">
+							<h3>Instructor</h3><br />
+							<div class="text-center">
+								<a href="https://silverbottlep.github.io/">
+									<img class="dp" src="images/eunbyung.jpg" /><br />
+									<p>Eunbyung Park</p>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="schedule"></a></p>
+				<div>
+					<h2 id="schedule">Schedule (Tentative)</h2>
+					<table class="table table-hover">
+						<thead>
+							<tr class="light-mod2">
+								<td style="width: 208px;">Date</td>
+								<td style="width: 380px;">Topic</td>
+								<td style="width: 400px;">Course Materials / Extra Reading</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Week 1 </td>
+								<td>
+									Introduction / Motivation / Course Logistics <br/>
+									Linear Models / Multi-Layer Perceptron (MLP) <br/>
+                  <a href="slides/01_linear_model_and_mlp.pdf">[Slides]</a><br/>
+								</td>
+								<td>
+									<ul>
+										<a href="http://www.nature.com/nature/journal/v521/n7553/pdf/nature14539.pdf">[LeCun et al., Nature '15]</a>
+									</ul>
+									<ul>
+										<a href="http://cs229.stanford.edu/notes2020fall/notes2020fall/cs229-notes1.pdf">CS229 Notes 1</a>
+									</ul>
+								</td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 2 </td>
+								<td>
+									Linear Models / Multi-Layer Perceptron (MLP) (continued) <br/>
+								</td>
+								<td>
+								</td>
+							</tr>
+							<tr>
+								<td>Week 3 </td>
+								<td>
+									Backpropagation / Automatic Differentiation <br/>
+                                    <a href="slides/02_backprop_and_autodiff.pdf">[Slides]</a><br/>
+								</td>
+								<td>
+									<ul>
+										<a href="https://arxiv.org/abs/1502.05767">Automatic differentiaion in machine learning: a survey</a>
+										<a href="https://cs231n.github.io/optimization-2/">CS231n Backpropagation</a>
+									</ul>
+								</td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 4 </td>
+								<td>
+									Optimization / Gradient Descent <br/>
+                                    <a href="slides/03_gradient_descent.pdf">[Slides]</a><br/>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="">
+								<td>Week 5 </td>
+								<td>
+									Convolutional Neural Networks 1 <br/>
+                                    <a href="slides/04_cnn1.pdf">[Slides]</a><br/>
+								</td>
+								<td>
+									<ul>
+										<a href="https://cs231n.github.io/convolutional-networks/">CS231n CNN</a> <br/>
+										<a href="https://poloclub.github.io/cnn-explainer/">CNN Explainer</a> <br/>
+									</ul>
+								</td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 6 </td>
+								<td>
+									Convolutional Neural Networks 2 <br/>
+                                    <a href="slides/05_cnn2.pdf">[Slides]</a><br/>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="">
+								<td>Week 7 </td>
+								<td>
+									Convolutional Neural Networks 2 (continued)<br/>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 8 </td>
+								<td>
+									CNN Applications (Object Detection and Segmentation) <br/>
+								</td>
+								<td>
+									<ul>
+										<a href="http://cs231n.stanford.edu/slides/2021/lecture_15.pdf">CS231n Detection and Segmentation</a> <br/>
+									</ul>
+								</td>
+							</tr>
+							<tr class="">
+								<td>Week 9 </td>
+								<td>
+                                    Project Proposals <br/>
+									Recurrent Neural Networks<br/>
+                                    <a href="slides/06_rnn.pdf">[Slides]</a><br/>
+								</td>
+								<td></td>
+							</tr>
+							<tr class="light-mod1">
+								<td>Week 10 </td>
+								<td>
+									Transformers <br/>
+                                    <a href="slides/07_transformers.pdf">[Slides]</a><br/>
+								</td>
+								<td>
+                                    <ul>
+									    <a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a> <br/>
+									    <a href="https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf">Attention is All You Need</a> <br/>
+									    <a href="https://arxiv.org/abs/1810.04805">BERT</a> <br/>
+									    <a href="https://arxiv.org/abs/2005.14165">GPT3</a> <br/>
+                                    </ul>
+                                </td>
+							</tr>
+							<tr class="">
+								<td>Week 11 </td>
+								<td>
+                                    Graph Neural Networks <br/>
+								</td>
+								<td>
+                                    <ul>
+									    <a href="http://web.stanford.edu/class/cs224w/index.html">CS224W Machine Learning with Graphs<br/>
+									    <a href="http://web.stanford.edu/class/cs224w/slides/06-GNN1.pdf">GNN1</a> <br/>
+									    <a href="http://web.stanford.edu/class/cs224w/slides/07-GNN2.pdf">GNN2</a> <br/>
+									    <a href="http://web.stanford.edu/class/cs224w/slides/08-GNN-application.pdf">GNN Application</a> <br/>
+									    <a href="https://tkipf.github.io/graph-convolutional-networks/">Graph Convolutional Networks</a> <br/>
+                                    </ul>
+                                </td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="project"></a></p>
+				<div>
+
+					<h2 id="projects">Project</h2>
+
+          <p>
+          The class project is for you to gain in-depth knowledge of deep learning by making your hands dirty.
+          You will be a part of 2~3 person group to conduct a project during the semester.
+          You can choose whatever topics that excite you and the only restriction is that you should use deep learning to tackle the problems.
+          </p>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="grading"></a></p>
+				<div>
+
+					<h2 id="grading">Grading</h2>
+
+					Class attendance and participation - [10%] </br>
+									Homework - [20%] </br>
+									Final project - [30%] </br>
+									Final exam - [40%] </br>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="prereqs"></a></p>
+				<div>
+
+					<h2 id="prerequisites">Prerequisites</h2>
+
+					<p>Ideally, previous exposure to following courses make you get most ouf of this course.</p>
+
+					<ul>
+						<li> Introduction to machine learning (ICE 3045 or equivalent) </li>
+						<li> Calculus and Linear Algebra (GEDB001, GEDB002, GEDB003 or equivalents) </li>
+						<li> Probatility (ICE 2003 or equivalent) </li>
+						<li> Programming (GEDT019, EEE2017 or equivalents, python language preferred) </li>
+					</ul>
+
+				</div>
+
+				<hr class="class-1" />
+				<p><a name="related"></a></p>
+				<div>
+					<h2 id="related-classes--online-resources">Related Courses and Materials</h2>
+					<ul>
+						<li><a href="http://cs231n.stanford.edu/">CS231n Convolutional Neural Networks for Visual Recognition, Stanford</a></li>
+						<li><a href="http://web.stanford.edu/class/cs224n/">CS224n: Natural Language Processing with Deep Learning, Stanford</a></li>
+						<li><a href="https://d2l.ai/">Dive into Deep Learning</a></li>
+						<li><a href="https://www.deeplearning.ai/">DeepLearning.AI</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- mathjax -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	</body>
+</html>
