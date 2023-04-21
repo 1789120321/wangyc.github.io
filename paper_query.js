@@ -241,10 +241,13 @@ function doParse(input) {
 }
 
 // module.exports = doParse
+
 function paperQuery() {
     var sc = document.currentScript;
     var paper = sc.getAttribute("paperName");
     var bib = sc.getAttribute("bib");
+    var CI = sc.getAttribute('CI');
+    var level = sc.getAttribute('level');
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', bib, true);
@@ -254,6 +257,11 @@ function paperQuery() {
             // 在这里使用文件内容
             var paperObject = doParse(fileContent);
             var paperInfo = paperObject[Object.keys(paperObject)[0]];
+
+            for (const key in paperInfo) {
+                // 删除其中多余的‘{’和‘}’
+                paperInfo[key] = paperInfo[key].replace(/{|}/g, '');
+            }
 
             paperInfo['AUTHOR'] = paperInfo['AUTHOR'].replace(/\s+/g, ' ').trim();
             // 使用正则表达式替换字符串中的所有"and"为","
@@ -267,7 +275,25 @@ function paperQuery() {
             var result = '';
             "<p className=\"paper\"><b>" + paper + bib + "</b></p>";
             if (paperInfo['entryType'] == 'ARTICLE') {
-                result = result + "<p className=\"paper\"><b>" + "<a href=" + paperInfo['URL'] + " style=\"color: black;\">" + paperInfo['TITLE'] + "</a></b></p>";
+                // 分别保存TOSEM、TSE、EmSE简写和全称之间的映射
+                paperNameMap = {
+                    "ACM Trans. Softw. Eng. Methodol.": "ACM Transactions on Software Engineering and Methodology",
+                    "IEEE Trans. Software Eng.": "IEEE Transactions on Software Engineering",
+                    "Empir. Softw. Eng.": "Empirical Software Engineering"
+                }
+                // 遍历对象的每一个属性
+                for (const key in paperNameMap) {
+                    // 判断该属性是否是对象本身的属性（而非原型链上的属性）
+                    if (paperNameMap.hasOwnProperty(key)) {
+                        // 判断该属性的key值是否存在于字符串中
+                        if (paperInfo['JOURNAL'].includes(key)) {
+                            // 如果存在，则将key值替换为对应的value值
+                            paperInfo['JOURNAL'] = paperInfo['JOURNAL'].replace(key, paperNameMap[key]);
+                        }
+                    }
+                }
+
+                result = result + "<p className=\"paper\"><b><strong><span style=\"color: #2ca25f\">[" + CI + "]</span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
 
                 result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\">'
                     + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
@@ -277,8 +303,9 @@ function paperQuery() {
                 }
 
                 result = result + "</p>";
+                // <a href=" + paperInfo['URL'] + " style=\"color: black;\">
             } else if (paperInfo['entryType'] == 'INPROCEEDINGS') {
-                result = result + "<p className=\"paper\"><b>" + "<a href=" + paperInfo['URL'] + " style=\"color: black;\">" + paperInfo['TITLE'] + "</a></b></p>";
+                result = result + "<p className=\"paper\"><b><strong><span style=\"color: #2ca25f\">[" + CI + "]</span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
 
                 result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\"> In '
                     + paperInfo['BOOKTITLE'];
@@ -288,6 +315,7 @@ function paperQuery() {
                 }
 
                 result = result + "</p>";
+                // <a href=" + paperInfo['URL'] + " style=\"color: black;\">
             }
 
 

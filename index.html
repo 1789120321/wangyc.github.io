@@ -1,213 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ming Wen</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/academicons.css"/>
-<!--  <link rel="stylesheet" href="css/academicons.min.css"/>-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Ming Wen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main_sidebar.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/academicons.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Ming Wen</a>
+<nav class="navbar navbar-inverse" style="position: fixed; right: 0;left: 0;top:0; z-index: 1;">
+    <div class="container-fluid" style="display:flex; justify-content:center; align-items:center;">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Ming Wen</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="pair.html">Team</a></li>
+            <li><a href="publication.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="service.html">Service</a></li>
+        </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="pair.html">Team</a></li>
-      <li><a href="publication.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="service.html">Service</a></li>
-    </ul>
-  </div>
 </nav>
 
 <div id="main" role="main">
-    <link rel="stylesheet" href="css/main_sidebar.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="sidebar sticky">
-    <div itemscope="" itemtype="http://schema.org/Person" class="profile_box">
-        <div class="author__avatar">
-            <img src="./data/profile.png" class="author__avatar" alt="Ming Wen">
-        </div>
-        <div class="author__content">
-            <h3 class="author__name">Ming Wen</h3>
-<!--            <p class="author__bio"><a href="http://cse.hust.edu.cn/">School of Cyber Science and Engineering</a></p>-->
-<!--            <p class="author__bio"><a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology</a></p>-->
-        </div>
-        <div class="author__urls-wrapper">
-            <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
-            <ul class="author__urls social-icons">
-                <li>
-                    <div style="white-space: normal; margin-bottom: 1em;"></div>
-                </li>
-                <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Wuhan, China</li>
-                <li><a href="http://faculty.hust.edu.cn/wenming" target="blank"><i class="fa fa-fw fa-home" aria-hidden="true"></i>Homepage</a></li>
-                <li><a href="mailto:mwenaa@hust.edu.cn"><i class="fa fa-fw fa-envelope"
-                                                             aria-hidden="true"></i>Email</a></li>
-                <li><a href="https://scholar.google.com/citations?user=ht2MknAAAAAJ&hl=en"><i
-                        class="fa fa-fw fa-graduation-cap"></i>Google Scholar</a></li>
-                <li><a href=""><i class="ai ai-dblp ai-fw" aria-hidden="true"></i>DBLP</a></li>
-                <li><a href=""><i class="ai ai-orcid-square ai-fw"></i>ORCID</a></li>
-            </ul>
-<!--            <div class="author__urls_sm">-->
-<!--                <a href="mailto:jinxutong@pku.edu.cn"><i class="fas fa-fw fa-envelope"-->
-<!--                                                         aria-hidden="true"></i></a>-->
-<!--                <a href="https://scholar.google.com/citations?user=C0cGtS0AAAAJ"><i-->
-<!--                        class="fa fa-fw fa-graduation-cap"></i></a>-->
-<!--            </div>-->
-        </div>
-        <div>
-<!--            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=wRNJCeYtt-LnqRuAnT2X-9utzMhKi77DllfbgFoazwI&co=0b4975&cmo=66c2a4&cmn=fc4e2a&ct=cdd4d9'></script>-->
-            <script type='text/javascript' id='clustrmaps' src='map_v2.js'></script>
+    <div class="sidebar sticky">
+        <div itemscope="" itemtype="http://schema.org/Person" class="profile_box">
+            <div class="author__avatar">
+                <img src="./data/profile.png" class="author__avatar" alt="Ming Wen">
+            </div>
+            <div class="author__content">
+                <h3 class="author__name">Ming Wen</h3>
+                <!--            <p class="author__bio"><a href="http://cse.hust.edu.cn/">School of Cyber Science and Engineering</a></p>-->
+                <!--            <p class="author__bio"><a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology</a></p>-->
+            </div>
+            <div class="author__urls-wrapper">
+                <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
+                <ul class="author__urls social-icons">
+                    <li>
+                        <div style="white-space: normal; margin-bottom: 1em;"></div>
+                    </li>
+                    <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Wuhan, China</li>
+                    <li><a href="http://faculty.hust.edu.cn/wenming" target="blank"><i class="fa fa-fw fa-home"
+                                                                                       aria-hidden="true"></i>Homepage</a>
+                    </li>
+                    <li><a href="mailto:mwenaa@hust.edu.cn"><i class="fa fa-fw fa-envelope"
+                                                               aria-hidden="true"></i>Email</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=ht2MknAAAAAJ&hl=en"><i
+                            class="fa fa-fw fa-graduation-cap"></i>Google Scholar</a></li>
+                    <li><a href=""><i class="ai ai-dblp ai-fw" aria-hidden="true"></i>DBLP</a></li>
+                    <li><a href=""><i class="ai ai-orcid-square ai-fw"></i>ORCID</a></li>
+                </ul>
+                <!--            <div class="author__urls_sm">-->
+                <!--                <a href="mailto:jinxutong@pku.edu.cn"><i class="fas fa-fw fa-envelope"-->
+                <!--                                                         aria-hidden="true"></i></a>-->
+                <!--                <a href="https://scholar.google.com/citations?user=C0cGtS0AAAAJ"><i-->
+                <!--                        class="fa fa-fw fa-graduation-cap"></i></a>-->
+                <!--            </div>-->
+            </div>
+            <div>
+                <script type='text/javascript' id='clustrmaps'
+                        src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=tt&d=wRNJCeYtt-LnqRuAnT2X-9utzMhKi77DllfbgFoazwI&co=0b4975&cmo=66c2a4&cmn=fc4e2a&ct=cdd4d9'></script>
+            </div>
         </div>
     </div>
-</div>
 
-<article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
-<!--  <div id="home">-->
-<!--    <div id="bio">-->
-<!--      <h1>Eunbyung Park</h1>-->
-<!--      <p style="margin: 0"><a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">Department of Electronic and Electrical Engineering</a></p>-->
-<!--      <p style="margin: 0"><a href="https://ai.skku.edu/ai/index.do" target="_blank">Department of Artificial Intelligence</a></p>-->
-<!--      <p style="margin: 0"><a href="https://www.skku.edu/eng/" target="_blank">Sungkyunkwan University (SKKU)</a></p>-->
-<!--      <p style="margin: 0">epark [at] skku dot edu</p>-->
-<!--    </div>-->
-<!--    <img id="photo" src="./data/epark.jpg" alt="Eunbyung Park">-->
-<!--  </div>-->
+    <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork"
+             style="padding-top: 60px;z-index: 0;max-width: 900px">
+        <!--  <div id="home">-->
+        <!--    <div id="bio">-->
+        <!--      <h1>Eunbyung Park</h1>-->
+        <!--      <p style="margin: 0"><a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">Department of Electronic and Electrical Engineering</a></p>-->
+        <!--      <p style="margin: 0"><a href="https://ai.skku.edu/ai/index.do" target="_blank">Department of Artificial Intelligence</a></p>-->
+        <!--      <p style="margin: 0"><a href="https://www.skku.edu/eng/" target="_blank">Sungkyunkwan University (SKKU)</a></p>-->
+        <!--      <p style="margin: 0">epark [at] skku dot edu</p>-->
+        <!--    </div>-->
+        <!--    <img id="photo" src="./data/epark.jpg" alt="Eunbyung Park">-->
+        <!--  </div>-->
 
 
-  <!--Actual tab content-->
-  <div id="main2">
-          <div>
-              <h1 id="biography">Biography</h1>
-              <p>
-                  I am currently an associate professor in the school of  <a target="_blank" href= "http://cse.hust.edu.cn"><strong><span style="color: #08306b"> Cyber Science and Engineering</span></strong></a>&nbsp;of <a target="_blank" href="http://www.hust.edu.cn"><strong><span style="color: #08306b"> Huazhong University of Science and Technology (HUST)</span></strong></a>. I have obtained my PhD degree in March 2019 from the Hong Kong University of Science and Technology.
-                  During my PhD studies, I was honored and fortunate to be supervised by <a target="_blank" href= "http://www.cse.ust.hk/faculty/scc/"><strong><span style="color: #08306b">Prof. Shing-Chi CHEUNG</span></strong></a> in the <a href="http://sccpu2.cse.ust.hk/castle/index.html"><strong><span style="color: #08306b">CASTLE</span></strong></a> group.
-                  I also had an unforgettable visiting experience at UC, Davis under the supervision of Prof. Zhendong Su.
-                  My research interests mainly focus on Software Security (in particular Fuzzing), Software Supply Chain Security and Big Code Analysis.
-<!--                  My official Homepage at HUST is: <a href="http://faculty.hust.edu.cn/wenming" target="blank"><strong style="color :#2ca25f">http://faculty.hust.edu.cn/wenming</strong></a>.-->
-              </p>
-<!--                  <p> I am an assistant professor at <a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">Sungkyunkwan University (SKKU)</a> in South Korea, where I lead the <a href="pair.html" target="_blank">Visual and Scientific Computing (VSC)</a> Lab. Prior to SKKU, I worked at <a href="https://msturing.org" target="_blank">Microsoft Project Turing</a> and an autonomous driving startup, <a href="http://nuro.ai/" target="_blank">Nuro</a>. I completed my PhD at University of North Carolina at Chapel Hill in 2019, advised by Prof <a href="http://acberg.com/" target="_blank">Alex Berg</a>. During PhD, I was fortunate to work at <a href="https://deepmind.com/" target="_blank">Google DeepMind</a>, <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, <a href="http://www.adobe.com/technology.html" target="_blank">Adobe Research</a>, and <a href="https://www.hp.com/us-en/hp-labs.html" target="_blank">HP Labs</a>. I am interested in a broad range of machine learning for visual and scientific computing. Recently, I have worked on neural fields architectures, applications, and training algorithms, and solving partial differential equations with data-driven approaches.</p>-->
-                  <!--<p style="color:#C34A2C">I am recruiting few self-motivated MS/Ph.D students (fully funded) to join our group. If you are interested in working with me, e-mail me w/ your CV and transcript.</p>-->
-          </div>
-    
-<!--          <div>-->
-<!--                  <h3>Education</h3>-->
-<!--                  <ul>-->
-<!--                          <li>Ph.D., Computer Science at University of North Carolina at Chapel Hill, 2014.09 - 2019.12 </li>-->
-<!--                          <li>M.S., Computer Science at Seoul National University, 2009.03 - 2011.02 </li>-->
-<!--                          <li>B.S., Computer Science at Kyung Hee University, 2002.03 - 2009.02 </li>-->
-<!--                  </ul>-->
-<!--          </div>-->
+        <!--Actual tab content-->
+        <div id="main2">
+            <div>
+                <h3 id="biography">Biography</h3>
+                <p>
+                    I am currently an associate professor in the school of <a target="_blank"
+                                                                              href="http://cse.hust.edu.cn"><strong><span
+                        style="color: #08306b"> Cyber Science and Engineering</span></strong></a>&nbsp;of <a
+                        target="_blank" href="http://www.hust.edu.cn"><strong><span style="color: #08306b"> Huazhong University of Science and Technology (HUST)</span></strong></a>.
+                    I have obtained my PhD degree in March 2019 from the Hong Kong University of Science and Technology.
+                    During my PhD studies, I was honored and fortunate to be supervised by <a target="_blank"
+                                                                                              href="http://www.cse.ust.hk/faculty/scc/"><strong><span
+                        style="color: #08306b">Prof. Shing-Chi CHEUNG</span></strong></a> in the <a
+                        href="http://sccpu2.cse.ust.hk/castle/index.html"><strong><span
+                        style="color: #08306b">CASTLE</span></strong></a> group.
+                    I also had an unforgettable visiting experience at UC, Davis under the supervision of Prof. Zhendong
+                    Su.
+                    My research interests mainly focus on Software Security (in particular Fuzzing), Software Supply
+                    Chain Security and Big Code Analysis.
+                    <!--                  My official Homepage at HUST is: <a href="http://faculty.hust.edu.cn/wenming" target="blank"><strong style="color :#2ca25f">http://faculty.hust.edu.cn/wenming</strong></a>.-->
+                </p>
+                <!--                  <p> I am an assistant professor at <a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">Sungkyunkwan University (SKKU)</a> in South Korea, where I lead the <a href="pair.html" target="_blank">Visual and Scientific Computing (VSC)</a> Lab. Prior to SKKU, I worked at <a href="https://msturing.org" target="_blank">Microsoft Project Turing</a> and an autonomous driving startup, <a href="http://nuro.ai/" target="_blank">Nuro</a>. I completed my PhD at University of North Carolina at Chapel Hill in 2019, advised by Prof <a href="http://acberg.com/" target="_blank">Alex Berg</a>. During PhD, I was fortunate to work at <a href="https://deepmind.com/" target="_blank">Google DeepMind</a>, <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, <a href="http://www.adobe.com/technology.html" target="_blank">Adobe Research</a>, and <a href="https://www.hp.com/us-en/hp-labs.html" target="_blank">HP Labs</a>. I am interested in a broad range of machine learning for visual and scientific computing. Recently, I have worked on neural fields architectures, applications, and training algorithms, and solving partial differential equations with data-driven approaches.</p>-->
+                <!--<p style="color:#C34A2C">I am recruiting few self-motivated MS/Ph.D students (fully funded) to join our group. If you are interested in working with me, e-mail me w/ your CV and transcript.</p>-->
+            </div>
 
-          <div>
-<!--                  <h3>Work Experience</h3>-->
-<!--                  <ul>-->
-<!--                          <li>Assistant Professor, <a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">SKKU</a>, 2021.02 - Present</li>-->
-<!--                          <li>Applied Scientist, <a href="https://msturing.org" target="_blank">Microsoft Project Turing</a>, 2020.09 - 2021.02</li>-->
-<!--                          <li>Research Scientist, <a href="http://nuro.ai/" target="_blank">Nuro</a>, 2019.06 - 2020.08</li>-->
-<!--                          <li>Research Intern, <a href="https://deepmind.com/" target="_blank">Google DeepMind</a>, 2018.06 - 2018.10 </li>-->
-<!--                          <li>Research Intern, <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, 2017.06 - 2017.08</li>-->
-<!--                          <li>Research Intern, <a href="http://www.adobe.com/technology.html" target="_blank">Adobe Research</a>, 2016.06 - 2016.08</li>-->
-<!--                          <li>Research Intern, <a href="https://www.hp.com/us-en/hp-labs.html"  target="_blank">HP Labs</a>, 2015.06 - 2015.08</li>-->
-<!--                  </ul>-->
-                  <h1>Working Experience</h1>
-                  <ul>
-                      <li>
-                          <strong>Huazhong University of Science and Technology</strong> <span style="float: right">Dec, 2019 - Now &nbsp;&nbsp;&nbsp;</span> <br />
-                          <i>Associate Professor</i> <br /></li>
-                      <li>
-                          <strong>The Hong Kong University of Science and Technology</strong> <span style="float: right">Apr, 2019 - Nov, 2019 &nbsp;&nbsp;&nbsp;</span> <br />
-                          <i>PostDoc Research Fellow, supervised by Prof. Shing-Chi CHEUNG</i> <br />
-                      </li>
-                  </ul>
-          </div>
+            <!--          <div>-->
+            <!--                  <h3>Education</h3>-->
+            <!--                  <ul>-->
+            <!--                          <li>Ph.D., Computer Science at University of North Carolina at Chapel Hill, 2014.09 - 2019.12 </li>-->
+            <!--                          <li>M.S., Computer Science at Seoul National University, 2009.03 - 2011.02 </li>-->
+            <!--                          <li>B.S., Computer Science at Kyung Hee University, 2002.03 - 2009.02 </li>-->
+            <!--                  </ul>-->
+            <!--          </div>-->
 
-          <div>
-<!--                  <h3>News</h3>-->
-<!--                  <ul>-->
-<!--                          <li>[2023.02] Two papers accepted to CVPR 2023!</a></li>-->
-<!--                          <li>[2023.02] Invited talk about <a href="https://jwcho5576.github.io/spinn/">SPINN</a> at <a href="https://www.brown.edu/research/projects/crunch/machine-learning-x-seminars/machine-learning-x-seminars-2023">CRUNCH Seminars at Brown University</a></li>-->
-<!--                          <li>[2022.11] Invited talk at 2022 <a href="https://ksiam.org/">KSIAM Annual Meeting</a></li>-->
-<!--                          <li>[2022.11] <a href="https://namgyukang.github.io/PIXEL/">PIXEL</a> was accepted to AAAI 2023</li>-->
-<!--                          <li>[2022.09] <a href="https://arxiv.org/abs/2201.04329">NRFF</a> was accepted to ACCV 2022</li>-->
-<!--                          <li>[2022.08] <a href="https://namgyukang.github.io/PIXEL/">PIXEL</a> was selected as a spotlight in <a href="https://dlde-2022.github.io/">DLDE-II (NeurIPS 2022 Workshop)</a></li>-->
-<!--                          <li>[2022.08] <a href="https://jwcho5576.github.io/spinn/">SPINN</a> received the best paper award in <a href="http://aiassociation.kr/Conference/ConferenceView.asp?AC=0&CODE=CC20220601&B_CATE=BBC1">CKAIA 2022</a></li>-->
-<!--                          <li>[2022.07] <a href="https://arxiv.org/abs/2207.09663">Streamable Neural Fields</a> was accepted to ECCV 2022</li>-->
-<!--                          <li>[2022.05] Our lab received the <a href="https://www.brlskku.com/">Basic Research Lab (BRL)</a> grant from the NRF</li>-->
-<!--                          <li>[2022.03] Invited talk at Samsung Research</li>-->
-<!--                          <li>[2021.09] Honor to be selected as a <a href="https://www.eiric.or.kr/manpower/rising_view.php?Seq=34">ERIC rising star</a> </li>-->
-<!--                          <li>[2021.06] VSC lab was founded</li>-->
-<!--                          <li>[2021.05] Invited talk at <a href="http://www.aifrontiers.org/">AI Frontiers Summit 2021</a></li>-->
-<!--                  </ul>-->
-                  <h1>News </h1>
-                  <ul>
-                      <li><strong>Jan 18, 2023: </strong>Our paper working on <span style="color: #2ca25f">Deep Neural Networks</span> was accepted to Transactions on Software Engineering and Methodology (TOSEM), Congratulations to Yongqiang!</li>
-                      <li><strong>Jan 17, 2023: </strong>Our paper working on <span style="color: #2ca25f">Program Repair for Android</span> was accepted to <a target="_blank" href="https://conf.researchr.org/home/issta-2023">ISSTA'2023</a>. Congratulations to Huaxun!</li>
-                      <li><strong>Jan 13, 2023: </strong>Our paper working on <span style="color: #2ca25f">JVM Fuzzing</span> was accepted to <a target="_blank" href="https://conf.researchr.org/home/icse-2023">ICSE'2023</a>. Congratulations to Haoxiang!</li>
-                      <li><strong>Jan 10, 2023: </strong>Our paper working on <span style="color: #2ca25f">Deep Learning System Testing</span> was accepted to Transactions on Software Engineering and Methodology (TOSEM), Congratulations to Ziniu!</li>
-                      <li><strong>Jan 4, 2023: </strong>Our paper working on <span style="color: #2ca25f">Code Semantic Embedding</span> was accepted to Transactions on Software Engineering and Methodology (TOSEM)!</li>
-                      <li><strong>Dec 9, 2022: </strong>Our paper working on <span style="color: #2ca25f">Software Supply Chain Security</span> was accepted to <a target="_blank" href="https://conf.researchr.org/home/icse-2023">ICSE'2023</a>. Congratulations to Yulun and Zeliang!</li>
-                      <li><strong>Dec 9, 2022: </strong>Our paper working on <span style="color: #2ca25f">SMT Solvers Testing</span> was accepted to <a target="_blank" href="https://conf.researchr.org/home/icse-2023">ICSE'2023</a>. Congratulations to Maolin!</li>
+            <div>
+                <!--                  <h3>Work Experience</h3>-->
+                <!--                  <ul>-->
+                <!--                          <li>Assistant Professor, <a href="https://ice.skku.edu/eng_ice/programs/departments/elec_intro.do" target="_blank">SKKU</a>, 2021.02 - Present</li>-->
+                <!--                          <li>Applied Scientist, <a href="https://msturing.org" target="_blank">Microsoft Project Turing</a>, 2020.09 - 2021.02</li>-->
+                <!--                          <li>Research Scientist, <a href="http://nuro.ai/" target="_blank">Nuro</a>, 2019.06 - 2020.08</li>-->
+                <!--                          <li>Research Intern, <a href="https://deepmind.com/" target="_blank">Google DeepMind</a>, 2018.06 - 2018.10 </li>-->
+                <!--                          <li>Research Intern, <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, 2017.06 - 2017.08</li>-->
+                <!--                          <li>Research Intern, <a href="http://www.adobe.com/technology.html" target="_blank">Adobe Research</a>, 2016.06 - 2016.08</li>-->
+                <!--                          <li>Research Intern, <a href="https://www.hp.com/us-en/hp-labs.html"  target="_blank">HP Labs</a>, 2015.06 - 2015.08</li>-->
+                <!--                  </ul>-->
+                <h3>Working Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Huazhong University of Science and Technology</strong> <span style="float: right">Dec, 2019 - Now &nbsp;&nbsp;&nbsp;</span>
+                        <br/>
+                        <i>Associate Professor</i> <br/></li>
+                    <li>
+                        <strong>The Hong Kong University of Science and Technology</strong> <span style="float: right">Apr, 2019 - Nov, 2019 &nbsp;&nbsp;&nbsp;</span>
+                        <br/>
+                        <i>PostDoc Research Fellow, supervised by Prof. Shing-Chi CHEUNG</i> <br/>
+                    </li>
+                </ul>
+            </div>
 
-                      <li><strong>Sep 19, 2022: </strong> I will organize "软件缺陷的自动发现与修复" and "优秀博士生论坛" of <a target="_blank" href="http://chinasoft.ccf.org.cn">ChinaSoft 2022</a>. Welcome for participation! </li>
-                      <li><strong>Dec 17, 2021: </strong>Our paper working on <span style="color: #2ca25f">Automated Fault Localization</span> was accepted to SANER 2022. Congratulations to Jing Yang! </li>
-                      <li><strong>Dec 7, 2021: </strong>Our paper working on <span style="color: #2ca25f">Patch Correctness Assessment</span> was accepted to TOSEM. Congratulations to Bo Lin! </li>
+            <div>
+                <!--                  <h3>News</h3>-->
+                <!--                  <ul>-->
+                <!--                          <li>[2023.02] Two papers accepted to CVPR 2023!</a></li>-->
+                <!--                          <li>[2023.02] Invited talk about <a href="https://jwcho5576.github.io/spinn/">SPINN</a> at <a href="https://www.brown.edu/research/projects/crunch/machine-learning-x-seminars/machine-learning-x-seminars-2023">CRUNCH Seminars at Brown University</a></li>-->
+                <!--                          <li>[2022.11] Invited talk at 2022 <a href="https://ksiam.org/">KSIAM Annual Meeting</a></li>-->
+                <!--                          <li>[2022.11] <a href="https://namgyukang.github.io/PIXEL/">PIXEL</a> was accepted to AAAI 2023</li>-->
+                <!--                          <li>[2022.09] <a href="https://arxiv.org/abs/2201.04329">NRFF</a> was accepted to ACCV 2022</li>-->
+                <!--                          <li>[2022.08] <a href="https://namgyukang.github.io/PIXEL/">PIXEL</a> was selected as a spotlight in <a href="https://dlde-2022.github.io/">DLDE-II (NeurIPS 2022 Workshop)</a></li>-->
+                <!--                          <li>[2022.08] <a href="https://jwcho5576.github.io/spinn/">SPINN</a> received the best paper award in <a href="http://aiassociation.kr/Conference/ConferenceView.asp?AC=0&CODE=CC20220601&B_CATE=BBC1">CKAIA 2022</a></li>-->
+                <!--                          <li>[2022.07] <a href="https://arxiv.org/abs/2207.09663">Streamable Neural Fields</a> was accepted to ECCV 2022</li>-->
+                <!--                          <li>[2022.05] Our lab received the <a href="https://www.brlskku.com/">Basic Research Lab (BRL)</a> grant from the NRF</li>-->
+                <!--                          <li>[2022.03] Invited talk at Samsung Research</li>-->
+                <!--                          <li>[2021.09] Honor to be selected as a <a href="https://www.eiric.or.kr/manpower/rising_view.php?Seq=34">ERIC rising star</a> </li>-->
+                <!--                          <li>[2021.06] VSC lab was founded</li>-->
+                <!--                          <li>[2021.05] Invited talk at <a href="http://www.aifrontiers.org/">AI Frontiers Summit 2021</a></li>-->
+                <!--                  </ul>-->
+                <h3>News</h3>
+                <ul>
+                    <li><strong>Jan 18, 2023: </strong>Our paper working on <span style="color: blue;">Deep Neural Networks</span>
+                        was accepted to Transactions on Software Engineering and Methodology (TOSEM), Congratulations to
+                        Yongqiang!
+                    </li>
+                    <li><strong>Jan 17, 2023: </strong>Our paper working on <span style="color: blue">Program Repair for Android</span>
+                        was accepted to <a target="_blank"
+                                           href="https://conf.researchr.org/home/issta-2023">ISSTA'2023</a>.
+                        Congratulations to Huaxun!
+                    </li>
+                    <li><strong>Jan 13, 2023: </strong>Our paper working on <span
+                            style="color: blue">JVM Fuzzing</span> was accepted to <a target="_blank"
+                                                                                      href="https://conf.researchr.org/home/icse-2023">ICSE'2023</a>.
+                        Congratulations to Haoxiang!
+                    </li>
+                    <li><strong>Jan 10, 2023: </strong>Our paper working on <span style="color: blue">Deep Learning System Testing</span>
+                        was accepted to Transactions on Software Engineering and Methodology (TOSEM), Congratulations to
+                        Ziniu!
+                    </li>
+                    <li><strong>Jan 4, 2023: </strong>Our paper working on <span style="color: blue">Code Semantic Embedding</span>
+                        was accepted to Transactions on Software Engineering and Methodology (TOSEM)!
+                    </li>
+                    <li><strong>Dec 9, 2022: </strong>Our paper working on <span style="color: blue">Software Supply Chain Security</span>
+                        was accepted to <a target="_blank"
+                                           href="https://conf.researchr.org/home/icse-2023">ICSE'2023</a>.
+                        Congratulations to Yulun and Zeliang!
+                    </li>
+                    <li><strong>Dec 9, 2022: </strong>Our paper working on <span
+                            style="color: blue">SMT Solvers Testing</span>
+                        was accepted to <a target="_blank"
+                                           href="https://conf.researchr.org/home/icse-2023">ICSE'2023</a>.
+                        Congratulations to Maolin!
+                    </li>
 
-                      <li><strong>Dec 3, 2021: </strong>Our paper working on <span style="color: #2ca25f">Fault Diagnosis for Deep Learning Programs</span> was accepted to   <a target="_blank" href="https://conf.researchr.org/track/icse-2022/icse-2022-papers">ICSE 2022</a>. Congratulations to Jialun! </li>
-                      <!-- <li><strong>Sep 20, 2021: </strong>Our paper working on <span style="color: #2ca25f">Machine Translation System Testing</span> was accepted to TOSEM. Congratulations to Jialun! </li>
+                    <li><strong>Sep 19, 2022: </strong> I will organize "软件缺陷的自动发现与修复" and "优秀博士生论坛"
+                        of <a target="_blank" href="http://chinasoft.ccf.org.cn">ChinaSoft 2022</a>. Welcome for
+                        participation!
+                    </li>
+                    <li><strong>Dec 17, 2021: </strong>Our paper working on <span style="color: blue">Automated Fault Localization</span>
+                        was accepted to SANER 2022. Congratulations to Jing Yang!
+                    </li>
+                    <li><strong>Dec 7, 2021: </strong>Our paper working on <span style="color: blue">Patch Correctness Assessment</span>
+                        was accepted to TOSEM. Congratulations to Bo Lin!
+                    </li>
 
-                      <li><strong>Sep 17, 2021: </strong>I will serve as the PC Member of  <a target="_blank" href="https://2022.esec-fse.org/track/fse-2022-research-papers">ESEC/FSE 2022</a>, welcome for submissions! </li>
+                    <li><strong>Dec 3, 2021: </strong>Our paper working on <span style="color: blue">Fault Diagnosis for Deep Learning Programs</span>
+                        was accepted to <a target="_blank"
+                                           href="https://conf.researchr.org/track/icse-2022/icse-2022-papers">ICSE
+                            2022</a>. Congratulations to Jialun!
+                    </li>
+                    <!-- <li><strong>Sep 20, 2021: </strong>Our paper working on <span style="color: #2ca25f">Machine Translation System Testing</span> was accepted to TOSEM. Congratulations to Jialun! </li>
 
-                      <li><strong>Sep 15, 2021: </strong>I will serve as the PC Member of  <a target="_blank" href="https://saner2022.uom.gr/restrack">SANER 2022</a>, welcome for submissions! </li>
-                      <li><strong>Aug 2, 2021: </strong>Our paper working on <span style="color: #2ca25f">Java Lambda Expressions</span> was accepted to <a target="_blank" href="https://conf.researchr.org/track/ase-2021/ase-2021-papers">ASE'2021</a>. Congratulations to Mingwei and Jun!</li>
-                      <li><strong>Aug 2, 2021: </strong>Our paper working on <span style="color: #2ca25f">Smart Contract</span> was accepted to <a target="_blank" href="https://conf.researchr.org/track/ase-2021/ase-2021-papers">ASE'2021</a>. Congratulations to Lu Liu!</li>
-                      <li><strong>Aug 2, 2021: </strong>Our paper working on <span style="color: #2ca25f">Android Configuration Compatibility Analysis</span> was accepted to <a target="_blank" href="https://conf.researchr.org/track/ase-2021/ase-2021-papers">ASE'2021</a>. Congratulations to Huaxun!</li>
-                      <li><strong>May 21, 2021: </strong>Our paper was accepted to <a target="_blank" href="https://www.springer.com/journal/10664/updates/18558044">EMSE</a>. Congratulations to Victor Tian!</li>
-                      <li><strong>May 20, 2021: </strong>Our paper (<span style="color: #2ca25f">CogNac</span>) was accepted to <a target="_blank" href="https://2021.esec-fse.org">ESEC/FSE'2021</a>. Congratulations to Shangwen!</li> -->
-                  </ul>
-          </div>
-          <div>
-              <h1>Selected Publications</h1>
-              <ul>
-                  <li>Building vision and language models with compositional representations.
-                      <ul>
-                          <li><a href="https://arxiv.org/abs/1809.01110" class="downgrade-link">Text2Scene: Generating Compositional Scenes from Textual Descriptions, CVPR 2019</a> [<strong><a href="https://www.vislang.ai/text2scene">demo</a></strong>] -- Best Paper Finalist.</li>
-                          <li><a href="https://arxiv.org/abs/1911.03826" class="downgrade-link">Drill-down: Interactive Retrieval of Complex Scenes using Natural Language Queries, NeurIPS 2019</a>.</li>
-                      </ul>
-                  </li>
-                  <li>Uncovering and mitigating biases in vision and language models.
-                      <ul>
-                          <li><a href="http://vicenteordonez.com/files/bias.pdf" class="downgrade-link">Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints, EMNLP 2017</a> -- Best Paper Award.</li>
-                          <li><a href="https://arxiv.org/abs/1811.08489" class="downgrade-link">Balanced Datasets Are Not Enough: Estimating and Mitigating Gender Bias in Deep Image Representations, ICCV 2019</a> [<strong><a href="https://www.vislang.ai/genderless">demo</a></strong>].</li>
-                      </ul>
-                  </li>
-                  <li>Improving the capabilities of deep learning models for visual and multimodal recognition.
-                      <ul>
-                          <li><a href="https://arxiv.org/abs/1710.08049" class="downgrade-link">Feedback-prop: Convolutional Neural Network Inference under Partial Evidence, CVPR 2018</a>. </li>
-                          <li><a href="files/visualpivoting_findings_of_emnlp2020.pdf" class="downgrade-link">Using Visual Feature Space as a Pivot Across Languages, Findings of EMNLP 2020</a> [<strong><a href="https://www.vislang.ai/translator">demo</a></strong>].</li>
-                      </ul>
-                  </li>
-                  <li>Transformer architectures for visual recognition.
-                      <ul>
-                          <li><a class="downgrade-link" href="https://arxiv.org/abs/2011.14027">General Multi-label Image Classification with Transformers, CVPR 2021</a></li>
-                          <li><a class="downgrade-link" href="https://arxiv.org/abs/2103.12236">Instance-level Image Retrieval using Reranking Transformers, ICCV 2021 </a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </div>
-  </div>
-</article>
+                    <li><strong>Sep 17, 2021: </strong>I will serve as the PC Member of  <a target="_blank" href="https://2022.esec-fse.org/track/fse-2022-research-papers">ESEC/FSE 2022</a>, welcome for submissions! </li>
+
+                    <li><strong>Sep 15, 2021: </strong>I will serve as the PC Member of  <a target="_blank" href="https://saner2022.uom.gr/restrack">SANER 2022</a>, welcome for submissions! </li>
+                    <li><strong>Aug 2, 2021: </strong>Our paper working on <span style="color: #2ca25f">Java Lambda Expressions</span> was accepted to <a target="_blank" href="https://conf.researchr.org/track/ase-2021/ase-2021-papers">ASE'2021</a>. Congratulations to Mingwei and Jun!</li>
+                    <li><strong>Aug 2, 2021: </strong>Our paper working on <span style="color: #2ca25f">Smart Contract</span> was accepted to <a target="_blank" href="https://conf.researchr.org/track/ase-2021/ase-2021-papers">ASE'2021</a>. Congratulations to Lu Liu!</li>
+                    <li><strong>Aug 2, 2021: </strong>Our paper working on <span style="color: #2ca25f">Android Configuration Compatibility Analysis</span> was accepted to <a target="_blank" href="https://conf.researchr.org/track/ase-2021/ase-2021-papers">ASE'2021</a>. Congratulations to Huaxun!</li>
+                    <li><strong>May 21, 2021: </strong>Our paper was accepted to <a target="_blank" href="https://www.springer.com/journal/10664/updates/18558044">EMSE</a>. Congratulations to Victor Tian!</li>
+                    <li><strong>May 20, 2021: </strong>Our paper (<span style="color: #2ca25f">CogNac</span>) was accepted to <a target="_blank" href="https://2021.esec-fse.org">ESEC/FSE'2021</a>. Congratulations to Shangwen!</li> -->
+                </ul>
+            </div>
+            <div>
+                <h3>Selected Publications</h3>
+                <ul>
+                    <li>Building vision and language models with compositional representations.
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/1809.01110" class="downgrade-link">Text2Scene: Generating
+                                Compositional Scenes from Textual Descriptions, CVPR 2019</a> [<strong><a
+                                    href="https://www.vislang.ai/text2scene">demo</a></strong>] -- Best Paper Finalist.
+                            </li>
+                            <li><a href="https://arxiv.org/abs/1911.03826" class="downgrade-link">Drill-down:
+                                Interactive Retrieval of Complex Scenes using Natural Language Queries, NeurIPS 2019</a>.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Uncovering and mitigating biases in vision and language models.
+                        <ul>
+                            <li><a href="http://vicenteordonez.com/files/bias.pdf" class="downgrade-link">Men Also Like
+                                Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints, EMNLP
+                                2017</a> -- Best Paper Award.
+                            </li>
+                            <li><a href="https://arxiv.org/abs/1811.08489" class="downgrade-link">Balanced Datasets Are
+                                Not Enough: Estimating and Mitigating Gender Bias in Deep Image Representations, ICCV
+                                2019</a> [<strong><a href="https://www.vislang.ai/genderless">demo</a></strong>].
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Improving the capabilities of deep learning models for visual and multimodal recognition.
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/1710.08049" class="downgrade-link">Feedback-prop:
+                                Convolutional Neural Network Inference under Partial Evidence, CVPR 2018</a>.
+                            </li>
+                            <li><a href="files/visualpivoting_findings_of_emnlp2020.pdf" class="downgrade-link">Using
+                                Visual Feature Space as a Pivot Across Languages, Findings of EMNLP 2020</a> [<strong><a
+                                    href="https://www.vislang.ai/translator">demo</a></strong>].
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Transformer architectures for visual recognition.
+                        <ul>
+                            <li><a class="downgrade-link" href="https://arxiv.org/abs/2011.14027">General Multi-label
+                                Image Classification with Transformers, CVPR 2021</a></li>
+                            <li><a class="downgrade-link" href="https://arxiv.org/abs/2103.12236">Instance-level Image
+                                Retrieval using Reranking Transformers, ICCV 2021 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
 </div>
 
 </body>

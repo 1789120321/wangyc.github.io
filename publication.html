@@ -1,320 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ming Wen</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main_sidebar.css"/>
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Ming Wen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main_sidebar.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Ming Wen</a>
+<nav class="navbar navbar-inverse" style="position: fixed; right: 0;left: 0;top:0; z-index: 1;">
+    <div class="container-fluid" style="display:flex; justify-content:center; align-items:center;">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Ming Wen</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pair.html">Team</a></li>
+            <li class="active"><a href="publication.html">Publications</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="service.html">Service</a></li>
+        </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pair.html">Team</a></li>
-      <li class="active"><a href="publication.html">Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="service.html">Service</a></li>
-    </ul>
-  </div>
 </nav>
 
-  <div id="main">
-<!--          <h3>Publications</h3>-->
-          <ul class="list-group">
-                  <li class="list-group-item">
-                          <p class="paper"><b>Finding Deviated Behaviors of Compressed DNN Models</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>ConfFix: Repairing Configuration Compatibility Issues in Android Apps</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>COMET:Coverage-guided Model Generation For Deep Learning Library Testing</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Toward Interpretable Graph Tensor Convolution Neural Network for Code Semantics Embedding</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Detecting JVM JIT Compiler Bugs via Exploring Two-Dimensional Input Spaces</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Understanding the Threats of Upstream Vulnerabilities to Downstream Projects in the Maven Ecosystem</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Validating SMT Solvers via Skeleton Enumeration Empowered by Historical Bug-Triggering Inputs</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Effective Isolation of Fault-Correlated Variables via Statistical and Mutation Analysis</b></p>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/YangYSWZJ22.bib"></script>
-                          <div id="paper/YangYSWZJ22.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/CaoLC0TWC22.bib"></script>
-                          <div id="paper/CaoLC0TWC22.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/LinWWM22.bib"></script>
-                          <div id="paper/LinWWM22.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/JinWWDZZ22.bib"></script>
-                          <div id="paper/JinWWDZZ22.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/JinWWDZZ22.bib"></script>
-                          <div id="paper/JinWWDZZ22.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/CaoLLWCC22.bib"></script>
-                          <div id="paper/CaoLLWCC22.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/ZhengY0Z0J21.bib"></script>
-                          <div id="paper/ZhengY0Z0J21.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/LiuWZ00C21.bib"></script>
-                          <div id="paper/LiuWZ00C21.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/Huang0W0C21.bib"></script>
-                          <div id="paper/Huang0W0C21.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/TianMWLCZ21.bib"></script>
-                          <div id="paper/TianMWLCZ21.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/Wang0LM21.bib"></script>
-                          <div id="paper/Wang0LM21.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WangWWWLCYXZ22.bib"></script>
-                          <div id="paper/WangWWWLCYXZ22.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/Wang000W21.bib"></script>
-                          <div id="paper/Wang000W21.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/LiWLWWTS020.bib"></script>
-                          <div id="paper/LiWLWWTS020.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WangWLWQZMJ20.bib"></script>
-                          <div id="paper/WangWLWQZMJ20.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/ZhuWWLCSZ20.bib"></script>
-                          <div id="paper/ZhuWWLCSZ20.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/TianZW0KC20.bib"></script>
-                          <div id="paper/TianZW0KC20.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/Wen0C20.bib"></script>
-                          <div id="paper/Wen0C20.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WangW0WLWYCX020.bib"></script>
-                          <div id="paper/WangW0WLWYCX020.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/ZhangZWTLX20.bib"></script>
-                          <div id="paper/ZhangZWTLX20.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WenCTWHHC21.bib"></script>
-                          <div id="paper/WenCTWHHC21.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WangWCYM19.bib"></script>
-                          <div id="paper/WangWCYM19.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WenWLTXCS19.bib"></script>
-                          <div id="paper/WenWLTXCS19.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WangWMY19.bib"></script>
-                          <div id="paper/WangWMY19.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WenLWXCS19.bib"></script>
-                          <div id="paper/WenLWXCS19.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WangWWLTZYC19.bib"></script>
-                          <div id="paper/WangWWLTZYC19.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WenWC20.bib"></script>
-                          <div id="paper/WenWC20.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WangWLWWYYZC18.bib"></script>
-                          <div id="paper/WangWLWWYYZC18.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WenCWHC18.bib"></script>
-                          <div id="paper/WenCWHC18.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WuWCZ18.bib"></script>
-                          <div id="paper/WuWCZ18.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/WenWC16.bib"></script>
-                          <div id="paper/WenWC16.bib"></div>
-                  </li>
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' bib="paper/XiaLWSZ14.bib"></script>
-                          <div id="paper/XiaLWSZ14.bib"></div>
-                  </li>
-          </ul>
+<div id="main" style="max-width: 900px; padding-top: 60px;z-index: 0;">
+    <h3>Conference</h3>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <p class="paper"><strong><span style="color: #2ca25f">[ISSTA’23]</span></strong><b>ConfFix: Repairing
+                Configuration Compatibility Issues in Android Apps</b><strong
+                    style="color:#fc4e2a;float: right">CCF-A</strong></p>
+            <p class="paper">Huaxun Huang, Chi Xu, <b>Ming Wen</b>, Yepang Liu, and Shing-Chi Cheung</p>
+            <p class="paper">In ACM SIGSOFT International Symposium on Software Testing and Analysis, 2023</p>
+        </li>
+        <li class="list-group-item">
+            <p class="paper"><strong><span style="color: #2ca25f">[ICSE’23]</span></strong><b>Detecting JVM JIT
+                Compiler Bugs via Exploring Two-Dimensional Input Spaces</b><strong
+                    style="color:#fc4e2a;float: right">CCF-A</strong></p>
+            <p class="paper">Haoxiang Jia, <b>Ming Wen</b>, Zifan Xie, Rongxin Wu, Maolin Sun, Kang Chen, and Hai Jin</p>
+            <p class="paper">In the International Conference on Software Engineering, Technical Research Paper, 2023</p>
+        </li>
+        <li class="list-group-item">
+            <p class="paper"><strong><span style="color: #2ca25f">[ICSE’23]</span></strong><b>Understanding the Threats
+                of Upstream Vulnerabilities to Downstream Projects in the
+                Maven Ecosystem</b><strong style="color:#fc4e2a;float: right">CCF-A</strong></p>
+            <p class="paper">Yulun Wu, Zeliang Yu, <b>Ming Wen</b>, Qiang Li, Deqing Zou, and Hai Jin</p>
+            <p class="paper">In the International Conference on Software Engineering, Technical Research Paper, 2023</p>
+        </li>
+        <li class="list-group-item">
+            <p class="paper"><strong><span style="color: #2ca25f">[ICSE’23]</span></strong><b>Validating SMT Solvers
+                via Skeleton Enumeration Empowered by Historical Bug-Triggering
+                Inputs</b><strong style="color:#fc4e2a;float: right">CCF-A</strong></p>
+            <p class="paper">Maolin Sun, Yibiao Yang, Ming Wen, Yongcong Wang, Yuming Zhou and Hai Jin</p>
+            <p class="paper">In the International Conference on Software Engineering, Technical Research Paper, 2023</p>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Isolating Compiler Optimization Faults via Differentiating Finer-grained Options.bib"
+                    CI="SANER’22" level="CCF-B"></script>
+            <div id="paper/Isolating Compiler Optimization Faults via Differentiating Finer-grained Options.bib"></div>
+        </li>
 
-          <!--
-          <h3>Preprints</h3>
-          <ul class="list-group">
-                  <li class="list-group-item">
-                          <script type='text/javascript' src='paper_query.js' paperName="FFNeRV: Flow-Guided Frame-Wise Neural Representations for dafadafddfaVideos" bib="paper/ZhuWWLCSZ20.bib"></script>
-                          <div id="paper/ZhuWWLCSZ20.bib"></div>
-                          <p class="paper"><b>FFNeRV: Flow-Guided Frame-Wise Neural Representations for Videos</b></p>
-                          <p class="paper">Joo Chan Lee, Daniel Rho, Jong Hwan Ko, Eunbyung Park</p>
-                          <p class="paper">arXiv:2212.12294</p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2212.12294">Paper</a>] [<a target="_blank" href="https://maincold2.github.io/ffnerv/">Project Page</a>] [<a target="_blank" href="https://github.com/maincold2/FFNeRV">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Separable PINN: Mitigating the Curse of Dimensionality in Physics-Informed Neural Networks</b></p> 
-                          <p class="paper">Junwoo Cho*, Seungtae Nam*, Hyunmo Yang, Seok-Bae Yun, Youngjoon Hong, Eunbyung Park</p>
-                          <p class="paper">(* Equal contribution, alphabetically ordered)</p>
-                          <p class="paper"><a target="_blank" href="https://dlde-2022.github.io/">The Symbiosis of Deep Learning and Differential Equations</a>, <b>NeurIPS 2022 Workshop</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2211.08761">Paper</a>] [<a target="_blank" href="https://jwcho5576.github.io/spinn/">Project Page</a>] [<a target="_blank" href="https://jwcho5576.github.io/spinn/">Code</a>]</p>
-                  </li>
-          </ul>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/DeepFD Automated Fault Diagnosis and Localization for Deep Learning Programs.bib"
+                    CI="ICSE’22" level="CCF-A"></script>
+            <div id="paper/DeepFD Automated Fault Diagnosis and Localization for Deep Learning Programs.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Why Do Developers Remove Lambda Expressions in Java.bib" CI="ASE’21"
+                    level="CCF-A"></script>
+            <div id="paper/Why Do Developers Remove Lambda Expressions in Java.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Characterizing Transaction-Reverting Statements in Ethereum Smart Contracts.bib"
+                    CI="ASE’21" level="CCF-A"></script>
+            <div id="paper/Characterizing Transaction-Reverting Statements in Ethereum Smart Contracts.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Characterizing and Detecting Configuration Compatibility Issues in Android Apps.bib"
+                    CI="ASE’21" level="CCF-A"></script>
+            <div id="paper/Characterizing and Detecting Configuration Compatibility Issues in Android Apps.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Lightweight global and local contexts guided method name recommendation with prior knowledge.bib"
+                    CI="ESEC/FSE’21" level="CCF-A"></script>
+            <div id="paper/Lightweight global and local contexts guided method name recommendation with prior knowledge.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Understanding and Facilitating the Co-Evolution of Production and Test Code.bib"
+                    CI="SANER’21" level="CCF-B"></script>
+            <div id="paper/Understanding and Facilitating the Co-Evolution of Production and Test Code.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/An Exploratory Study of Bugs in Extended Reality Applications on the Web.bib"
+                    CI="ISSRE’20" level="CCF-B"></script>
+            <div id="paper/An Exploratory Study of Bugs in Extended Reality Applications on the Web.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Automated Patch Correctness Assessment How Far are We.bib" CI="ASE’20"
+                    level="CCF-A"></script>
+            <div id="paper/Automated Patch Correctness Assessment How Far are We.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/MockSniffer Characterizing and Recommending Mocking Decisions for Unit Tests.bib"
+                    CI="ASE’20" level="CCF-A"></script>
+            <div id="paper/MockSniffer Characterizing and Recommending Mocking Decisions for Unit Tests.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/EvalDNN a toolbox for evaluating deep neural network models.bib"
+                    CI="ICSE-Demonstrations’20" level=""></script>
+            <div id="paper/EvalDNN a toolbox for evaluating deep neural network models.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Boosting automated program repair with bug-inducing commits.bib" CI="ICSE-NIER’20"
+                    level=""></script>
+            <div id="paper/Boosting automated program repair with bug-inducing commits.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Watchman monitoring dependency conflicts for Python library ecosystem.bib" CI="ICSE’20"
+                    level="CCF-A"></script>
+            <div id="paper/Watchman monitoring dependency conflicts for Python library ecosystem.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/How Do Python Framework APIs Evolve An Exploratory Study.bib" CI="SANER’20"
+                    level="CCF-B"></script>
+            <div id="paper/How Do Python Framework APIs Evolve An Exploratory Study.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/How Different Is It Between Machine-Generated and Developer-Provided Patches.bib"
+                    CI="ESEM’19" level="CCF-B"></script>
+            <div id="paper/How Different Is It Between Machine-Generated and Developer-Provided Patches.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Exploring and exploiting the correlations between bug-inducing and bug-fixing commits.bib"
+                    CI="ESEC/FSE’19" level="CCF-A"></script>
+            <div id="paper/Exploring and exploiting the correlations between bug-inducing and bug-fixing commits.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Attention Please Consider Mockito when Evaluating Newly Proposed Automated Program Repair Techniques.bib"
+                    CI="EASE’19" level=""></script>
+            <div id="paper/Attention Please Consider Mockito when Evaluating Newly Proposed Automated Program Repair Techniques.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Exposing library API misuses via mutation analysis.bib" CI="ICSE’19"
+                    level="CCF-A"></script>
+            <div id="paper/Exposing library API misuses via mutation analysis.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Could I have a stack trace to examine the dependency conflict issue.bib" CI="ICSE’19"
+                    level="CCF-A"></script>
+            <div id="paper/Could I have a stack trace to examine the dependency conflict issue.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Do the dependency conflicts in my project matter.bib" CI="ESEC/FSE’18"
+                    level="CCF-A"></script>
+            <div id="paper/Do the dependency conflicts in my project matter.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Context-aware patch generation for better automated program repair.bib" CI="ICSE’18"
+                    level="CCF-A"></script>
+            <div id="paper/Context-aware patch generation for better automated program repair.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Locus locating bugs from software changes.bib" CI="ASE’16" level="CCF-A"></script>
+            <div id="paper/Locus locating bugs from software changes.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/An empirical study of bug report field reassignment.bib" CI="SANER’14"
+                    level="CCF-B"></script>
+            <div id="paper/An empirical study of bug report field reassignment.bib"></div>
+        </li>
+    </ul>
 
-          <h3>Publications <a href="https://scholar.google.com/citations?user=iPyuJmQAAAAJ&hl=en"><small>[Google Scholar]</small></a> </h3>
-          <ul class="list-group">
-                  <li class="list-group-item">
-                          <p class="paper"><b>Masked Wavelet Representation for Compact Neural Radiance Fields</b></p> 
-                          <p class="paper">Daniel Rho*, Byeonghyeon Lee*, Seungtae Nam, Joo Chan Lee, Jong Hwan Ko, Eunbyung Park</p>
-                          <p class="paper">(* Equal contribution)</p>
-                          <p class="paper">The IEEE/CVF Conference on Computer Vision and Pattern Recognition, <b>CVPR 2023</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2212.09069">Paper</a>] [<a target="_blank" href="https://daniel03c1.github.io/masked_wavelet_nerf/">Project Page</a>] [<a target="_blank" href="https://github.com/daniel03c1/masked_wavelet_nerf">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>SMPConv: Self-Moving Point Representations for Continuous Convolution</b></p> 
-                          <p class="paper">Sanghyeon Kim, Eunbyung Park</p>
-                          <p class="paper">The IEEE/CVF Conference on Computer Vision and Pattern Recognition, <b>CVPR 2023</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2304.02330">Paper</a>] [<a target="_blank" href="https://github.com/sangnekim/SMPConv">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>PIXEL: Physics-Informed Cell Representations for Fast and Accurate PDE Solvers</b></p> 
-                          <p class="paper">Namgyu Kang, Byeonghyeon Lee, Youngjoon Hong, Seok-Bae Yun, Eunbyung Park</p>
-                          <p class="paper">The 37th AAAI Conference on Artificial Intelligence, <b>AAAI 2023</b></p>
-                          <p class="paper"><a target="_blank" href="https://dlde-2022.github.io/">The Symbiosis of Deep Learning and Differential Equations</a>, <b>NeurIPS 2022 Workshop</b>, <b style="color:#C34A2C">Spotlight!</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2207.12800">Paper</a>] [<a target="_blank" href="https://namgyukang.github.io/PIXEL/">Project Page</a>] [<a target="_blank" href="https://github.com/NamGyuKang/PIXEL">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Streamable Neural Fields</b></p>
-                          <p class="paper">Junwoo Cho*, Seungtae Nam*, Daniel Rho, Jong Hwan Ko, Eunbyung Park</p>
-                          <p class="paper">(* Equal contribution, alphabetically ordered)</p>
-                          <p class="paper">European Conference on Computer Vision, <b>ECCV 2022</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2207.09663">Paper</a>] [<a target="_blank" href="https://github.com/jwcho5576/streamable_nf">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Neural Residual Flow Fields for Efficient Video Representations</b></p>
-                          <p class="paper">Daniel Rho, Junwoo Cho, Jong Hwan Ko, Eunbyung Park</p>
-                          <p class="paper">Asian Conference on Computer Vision, <b>ACCV 2022</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2201.04329">Paper</a>] [<a target="_blank" href="https://github.com/daniel03c1/eff_video_representation">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video</b></p>
-                          <p class="paper">YoungJoong Kwon, Stefano Petrangeli, Dahun Kim, Haoliang Wang, Eunbyung Park, Vishy Swaminathan, Henry Fuchs</p>
-                          <p class="paper">European Conference on Computer Vision, <b>ECCV 2020</b></p>
-                          <p class="paper">[<a target="_blank" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490375.pdf">Paper</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Unsupervised Doodling and Painting with Improved SPIRAL</b></p>
-                          <p class="paper">John F. J. Mellor, Eunbyung Park, Yaroslav Ganin, Igor Babuschkin, Tejas Kulkarni, Dan Rosenbaum, Andy Ballard, Theophane Weber, Oriol Vinyals, S. M. Ali Eslami</p>
-                          <p class="paper">Machine Learning for Creativity and Design, <b>NeurIPS 2019 Workshop</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1910.01007">Paper</a>] [<a target="_blank" href="https://learning-to-paint.github.io/">Animated Paper</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Meta-Curvature</b></p>
-                          <p class="paper">Eunbyung Park, Junier B. Oliva</p>
-                          <p class="paper">Neural Information Processing Systems, <b>NeurIPS 2019</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1902.03356">Paper</a>] [<a target="_blank" href="https://github.com/silverbottlep/meta_curvature">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Three years of Low-Power Image Recognition Challenge</b></p>
-                          <p class="paper">Kent Gauen, Ryan Dailey, Yung-Hsiang Lu, Eunbyung Park, Wei Liu, Alexander C Berg, Yiran Chen </p>
-                          <p class="paper">Design, Automation and Test in Europe Conference, <b>DATE 2018 Exhibition</b><br>
-                          <p class="paper">[<a target="_blank" href="https://ieeexplore.ieee.org/document/8342099">Paper</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Meta-Tracker: Fast and Robust Online Adaptation for Visual Object Trackers</b></p>
-                          <p class="paper">Eunbyung Park, Alexander C. Berg</p>
-                          <p class="paper">European Conference on Computer Vision, <b>ECCV 2018</b></p>
-                          <p class="paper">[<a target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Eunbyung_Park_Meta-Tracker_Fast_and_ECCV_2018_paper.pdf">Paper</a>] [<a target="_blank" href="https://github.com/silverbottlep/meta_trackers">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>A Dataset for Developing and Benchmarking Active Vision</b></p>
-                          <p class="paper">Phil Ammirato, Patrick Poirson, Eunbyung Park, Jana Kosecka, Alexander C. Berg</p>
-                          <p class="paper">International Conference on Robotics and Automation, <b>ICRA 2017</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1702.08272">Paper</a>] [<a target="_blank" href="http://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html">Project Page</a>]</p> 
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Transformation-Grounded Image Generation Network for Novel 3D View Synthesis</b></p>
-                          <p class="paper">Eunbyung Park, Jimei Yang, Ersin Yumer, Duygu Ceylan, Alexander C. Berg</p>
-                          <p class="paper">The IEEE/CVF Conference on Computer Vision and Pattern Recognition, <b>CVPR 2017</b></p>
-                          <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1703.02921">Paper</a>] [<a target="_blank" href="http://www.cs.unc.edu/~eunbyung/tvsn/">Project Page</a>] [<a target="_blank" href="https://github.com/silverbottlep/tvsn">Code</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>An Evaluation of the NVIDIA TX1 for Supporting Real-Time Computer Vision Workloads</b></p>
-                          <p class="paper">Nathan Otterness, Ming Yang, Sarah Rust, Eunbyung Park, James H. Anderson, F. Donelson Smith, Alexander C. Berg, Shige Wang</p>
-                          <p class="paper">Real-Time and Embedded Technology and Applications Symposium, <b>RTAS 2017</b></p>
-                          <p class="paper">[<a target="_blank" href="https://cs.unc.edu/~anderson/papers/rtas17b.pdf">Paper</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Registration of Pathological Images</b></p>
-                          <p class="paper">Xiao Yang, Xu Han, Eunbyung Park, Stephen Aylward, Roland Kwitt, Marc Niethammer</p>
-                          <p class="paper">Simulation an Synthesis in Medical Imaging, <b>MICCAI 2016 Workshop</b></p>
-                          <p class="paper">[<a target="_blank" href="http://wwwx.cs.unc.edu/~mn/sites/default/files/yang_miccai_2016_tumor.pdf">Paper</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Learning to Decompose for Object Detection and Instance Segmentation</b></p>
-                          <p class="paper">Eunbyung Park, Alexander C. Berg</p>
-                          <p class="paper">International Conference on Learning Representations, <b>ICLR 2016 Workshop</b></p>
-                          <p class="paper">[<a target="_blank" href="http://arxiv.org/abs/1511.06449">Paper</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Combining Multiple Sources of Knowledge in Deep CNNs for Action Recognition</b></p>
-                          <p class="paper">Eunbyung Park, Xufeng Han, Tamara L. Berg, Alexander C. Berg</p>
-                          <p class="paper">IEEE Winter Conference on Applications of Computer Vision, <b>WACV 2016</b></p>
-                          <p class="paper">[<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/wacv2016_combining.pdf">Paper</a>]</p>
-                  </li>
-                  <li class="list-group-item">
-                          <p class="paper"><b>Visual Madlibs: Fill-in-the-blank Image Description and Question Answering</b></p>
-                          <p class="paper">Licheng Yu, Eunbyung Park, Alexander C. Berg, Tamara L. Berg</p>
-                          <p class="paper">International Conference on Computer Vision, <b>ICCV 2015</b></p>
-                          <p class="paper"> <div class="description"> [<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs.pdf">Paper</a>][<a target="_blank" href="http://tamaraberg.com/visualmadlibs/">Project Page</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/images/iccv15_madlibs.mp4">Spotlight Video</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs_supp.pdf">Supplementary File</a>] </p>
-                  </li>
-          </ul>
-          -->
-  </div>
+    <h3>Journal</h3>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <p class="paper"><strong><span style="color: #2ca25f">[TOSEM’23]</span></strong><b>Finding Deviated
+                Behaviors of Compressed DNN Models for Image Classifications</b><strong
+                    style="color:#fc4e2a;float: right">CCF-A</strong></p>
+            <p class="paper">Yongqiang Tian, Wuqi Zhang, <b>Ming Wen</b>, Shing-Chi Cheung, Chengnian Sun, Shiqing Ma,
+                and Yu Jiang</p>
+            <p class="paper">ACM Transactions on Software Engineering and Methodology, 2023</p>
+            <p class="paper">[<a target="_blank" href="https://doi.org/10.1145/3583564">Paper</a>]</p>
+        </li>
+        <li class="list-group-item">
+            <p class="paper"><strong><span
+                    style="color: #2ca25f">[TOSEM’23]</span></strong><b>COMET:Coverage-guided Model Generation For Deep
+                Learning Library Testing</b><strong style="color:#fc4e2a;float: right">CCF-A</strong></p>
+            <p class="paper">Meiziniu Li, Jialun Cao, Yongqiang Tian, Tsz On Li, <b>Ming
+                Wen</b>, and Shing-Chi Cheung</p>
+            <p class="paper">ACM Transactions on Software Engineering and Methodology,
+                2023</p>
+            <p class="paper">[<a target="_blank"
+                                 href="https://doi.org/10.1145/3583566">Paper</a>]</p>
+        </li>
+        <li class="list-group-item">
+            <p class="paper"><strong><span
+                    style="color: #2ca25f">[TOSEM’23]</span></strong><b>Toward Interpretable Graph Tensor Convolution
+                Neural Network for Code Semantics Embedding</b><strong style="color:#fc4e2a;float: right">CCF-A</strong>
+            </p>
+            <p class="paper">Jia Yang, Cai Fu, Fengyang Deng, <b>Ming Wen</b>, Xiaowei Guo,
+                and Chuanhao Wan</p>
+            <p class="paper">ACM Transactions on Software Engineering and Methodology,
+                2023</p>
+            <p class="paper">[<a target="_blank"
+                                 href="https://doi.org/10.1145/3582574">Paper</a>]</p>
+        </li>
+        <li class="list-group-item">
+            <p class="paper"><strong><span style="color: #2ca25f">[TSE’22]</span></strong><b>Effective
+                Isolation of Fault-Correlated Variables via Statistical and Mutation Analysis</b><strong
+                    style="color:#fc4e2a;float: right">CCF-A</strong></p>
+            <p class="paper"><b>Ming Wen</b>, Zifan Xie, Kaixuan Luo, Xiao Chen, Yibiao Yang,
+                and Hai Jin</p>
+            <p class="paper">IEEE Transactions on Software Engineering, 2023, 49(4):
+                2053-2068</p>
+            <p class="paper">[<a target="_blank"
+                                 href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9903287&isnumber=10103953">Paper</a>]
+            </p>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Context-Aware Code Change Embedding for Better Patch Correctness Assessment.bib"
+                    CI="TOSEM’21" level="CCF-A"></script>
+            <div id="paper/Context-Aware Code Change Embedding for Better Patch Correctness Assessment.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Aroc An Automatic Repair Framework for On-Chain Smart Contracts.bib" CI="TSE’21"
+                    level="CCF-A"></script>
+            <div id="paper/Aroc An Automatic Repair Framework for On-Chain Smart Contracts.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/SemMT A Semantic-Based Testing Approach for Machine Translation Systems.bib"
+                    CI="TOSEM’21" level="CCF-A"></script>
+            <div id="paper/SemMT A Semantic-Based Testing Approach for Machine Translation Systems.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/To what extent do DNN-based image classification models make unreliable inferences.bib"
+                    CI="EmSE’21" level="CCF-B"></script>
+            <div id="paper/To what extent do DNN-based image classification models make unreliable inferences.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Will Dependency Conflicts Affect My Program's Semantics.bib" CI="TSE’21"
+                    level="CCF-A"></script>
+            <div id="paper/Will Dependency Conflicts Affect My Program's Semantics.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/Historical Spectrum Based Fault Localization.bib" CI="TSE’20" level="CCF-A"></script>
+            <div id="paper/Historical Spectrum Based Fault Localization.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/How Well Do Change Sequences Predict Defects Sequence Learning from Software Changes.bib"
+                    CI="TSE’18" level="CCF-A"></script>
+            <div id="paper/How Well Do Change Sequences Predict Defects Sequence Learning from Software Changes.bib"></div>
+        </li>
+        <li class="list-group-item">
+            <script type='text/javascript' src='paper_query.js'
+                    bib="paper/ChangeLocator locate crash-inducing changes based on crash reports.bib" CI="EmSE’17"
+                    level="CCF-B"></script>
+            <div id="paper/ChangeLocator locate crash-inducing changes based on crash reports.bib"></div>
+        </li>
+    </ul>
+
+    <!--
+    <h3>Preprints</h3>
+    <ul class="list-group">
+            <li class="list-group-item">
+                    <script type='text/javascript' src='paper_query.js' paperName="FFNeRV: Flow-Guided Frame-Wise Neural Representations for dafadafddfaVideos" bib="paper/ZhuWWLCSZ20.bib"></script>
+                    <div id="paper/ZhuWWLCSZ20.bib"></div>
+                    <p class="paper"><b>FFNeRV: Flow-Guided Frame-Wise Neural Representations for Videos</b></p>
+                    <p class="paper">Joo Chan Lee, Daniel Rho, Jong Hwan Ko, Eunbyung Park</p>
+                    <p class="paper">arXiv:2212.12294</p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2212.12294">Paper</a>] [<a target="_blank" href="https://maincold2.github.io/ffnerv/">Project Page</a>] [<a target="_blank" href="https://github.com/maincold2/FFNeRV">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Separable PINN: Mitigating the Curse of Dimensionality in Physics-Informed Neural Networks</b></p>
+                    <p class="paper">Junwoo Cho*, Seungtae Nam*, Hyunmo Yang, Seok-Bae Yun, Youngjoon Hong, Eunbyung Park</p>
+                    <p class="paper">(* Equal contribution, alphabetically ordered)</p>
+                    <p class="paper"><a target="_blank" href="https://dlde-2022.github.io/">The Symbiosis of Deep Learning and Differential Equations</a>, <b>NeurIPS 2022 Workshop</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2211.08761">Paper</a>] [<a target="_blank" href="https://jwcho5576.github.io/spinn/">Project Page</a>] [<a target="_blank" href="https://jwcho5576.github.io/spinn/">Code</a>]</p>
+            </li>
+    </ul>
+
+    <h3>Publications <a href="https://scholar.google.com/citations?user=iPyuJmQAAAAJ&hl=en"><small>[Google Scholar]</small></a> </h3>
+    <ul class="list-group">
+            <li class="list-group-item">
+                    <p class="paper"><b>Masked Wavelet Representation for Compact Neural Radiance Fields</b></p>
+                    <p class="paper">Daniel Rho*, Byeonghyeon Lee*, Seungtae Nam, Joo Chan Lee, Jong Hwan Ko, Eunbyung Park</p>
+                    <p class="paper">(* Equal contribution)</p>
+                    <p class="paper">The IEEE/CVF Conference on Computer Vision and Pattern Recognition, <b>CVPR 2023</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2212.09069">Paper</a>] [<a target="_blank" href="https://daniel03c1.github.io/masked_wavelet_nerf/">Project Page</a>] [<a target="_blank" href="https://github.com/daniel03c1/masked_wavelet_nerf">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>SMPConv: Self-Moving Point Representations for Continuous Convolution</b></p>
+                    <p class="paper">Sanghyeon Kim, Eunbyung Park</p>
+                    <p class="paper">The IEEE/CVF Conference on Computer Vision and Pattern Recognition, <b>CVPR 2023</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2304.02330">Paper</a>] [<a target="_blank" href="https://github.com/sangnekim/SMPConv">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>PIXEL: Physics-Informed Cell Representations for Fast and Accurate PDE Solvers</b></p>
+                    <p class="paper">Namgyu Kang, Byeonghyeon Lee, Youngjoon Hong, Seok-Bae Yun, Eunbyung Park</p>
+                    <p class="paper">The 37th AAAI Conference on Artificial Intelligence, <b>AAAI 2023</b></p>
+                    <p class="paper"><a target="_blank" href="https://dlde-2022.github.io/">The Symbiosis of Deep Learning and Differential Equations</a>, <b>NeurIPS 2022 Workshop</b>, <b style="color:#C34A2C">Spotlight!</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2207.12800">Paper</a>] [<a target="_blank" href="https://namgyukang.github.io/PIXEL/">Project Page</a>] [<a target="_blank" href="https://github.com/NamGyuKang/PIXEL">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Streamable Neural Fields</b></p>
+                    <p class="paper">Junwoo Cho*, Seungtae Nam*, Daniel Rho, Jong Hwan Ko, Eunbyung Park</p>
+                    <p class="paper">(* Equal contribution, alphabetically ordered)</p>
+                    <p class="paper">European Conference on Computer Vision, <b>ECCV 2022</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2207.09663">Paper</a>] [<a target="_blank" href="https://github.com/jwcho5576/streamable_nf">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Neural Residual Flow Fields for Efficient Video Representations</b></p>
+                    <p class="paper">Daniel Rho, Junwoo Cho, Jong Hwan Ko, Eunbyung Park</p>
+                    <p class="paper">Asian Conference on Computer Vision, <b>ACCV 2022</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/2201.04329">Paper</a>] [<a target="_blank" href="https://github.com/daniel03c1/eff_video_representation">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Rotationally-Temporally Consistent Novel View Synthesis of Human Performance Video</b></p>
+                    <p class="paper">YoungJoong Kwon, Stefano Petrangeli, Dahun Kim, Haoliang Wang, Eunbyung Park, Vishy Swaminathan, Henry Fuchs</p>
+                    <p class="paper">European Conference on Computer Vision, <b>ECCV 2020</b></p>
+                    <p class="paper">[<a target="_blank" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490375.pdf">Paper</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Unsupervised Doodling and Painting with Improved SPIRAL</b></p>
+                    <p class="paper">John F. J. Mellor, Eunbyung Park, Yaroslav Ganin, Igor Babuschkin, Tejas Kulkarni, Dan Rosenbaum, Andy Ballard, Theophane Weber, Oriol Vinyals, S. M. Ali Eslami</p>
+                    <p class="paper">Machine Learning for Creativity and Design, <b>NeurIPS 2019 Workshop</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1910.01007">Paper</a>] [<a target="_blank" href="https://learning-to-paint.github.io/">Animated Paper</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Meta-Curvature</b></p>
+                    <p class="paper">Eunbyung Park, Junier B. Oliva</p>
+                    <p class="paper">Neural Information Processing Systems, <b>NeurIPS 2019</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1902.03356">Paper</a>] [<a target="_blank" href="https://github.com/silverbottlep/meta_curvature">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Three years of Low-Power Image Recognition Challenge</b></p>
+                    <p class="paper">Kent Gauen, Ryan Dailey, Yung-Hsiang Lu, Eunbyung Park, Wei Liu, Alexander C Berg, Yiran Chen </p>
+                    <p class="paper">Design, Automation and Test in Europe Conference, <b>DATE 2018 Exhibition</b><br>
+                    <p class="paper">[<a target="_blank" href="https://ieeexplore.ieee.org/document/8342099">Paper</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Meta-Tracker: Fast and Robust Online Adaptation for Visual Object Trackers</b></p>
+                    <p class="paper">Eunbyung Park, Alexander C. Berg</p>
+                    <p class="paper">European Conference on Computer Vision, <b>ECCV 2018</b></p>
+                    <p class="paper">[<a target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Eunbyung_Park_Meta-Tracker_Fast_and_ECCV_2018_paper.pdf">Paper</a>] [<a target="_blank" href="https://github.com/silverbottlep/meta_trackers">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>A Dataset for Developing and Benchmarking Active Vision</b></p>
+                    <p class="paper">Phil Ammirato, Patrick Poirson, Eunbyung Park, Jana Kosecka, Alexander C. Berg</p>
+                    <p class="paper">International Conference on Robotics and Automation, <b>ICRA 2017</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1702.08272">Paper</a>] [<a target="_blank" href="http://www.cs.unc.edu/~ammirato/active_vision_dataset_website/index.html">Project Page</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Transformation-Grounded Image Generation Network for Novel 3D View Synthesis</b></p>
+                    <p class="paper">Eunbyung Park, Jimei Yang, Ersin Yumer, Duygu Ceylan, Alexander C. Berg</p>
+                    <p class="paper">The IEEE/CVF Conference on Computer Vision and Pattern Recognition, <b>CVPR 2017</b></p>
+                    <p class="paper">[<a target="_blank" href="https://arxiv.org/abs/1703.02921">Paper</a>] [<a target="_blank" href="http://www.cs.unc.edu/~eunbyung/tvsn/">Project Page</a>] [<a target="_blank" href="https://github.com/silverbottlep/tvsn">Code</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>An Evaluation of the NVIDIA TX1 for Supporting Real-Time Computer Vision Workloads</b></p>
+                    <p class="paper">Nathan Otterness, Ming Yang, Sarah Rust, Eunbyung Park, James H. Anderson, F. Donelson Smith, Alexander C. Berg, Shige Wang</p>
+                    <p class="paper">Real-Time and Embedded Technology and Applications Symposium, <b>RTAS 2017</b></p>
+                    <p class="paper">[<a target="_blank" href="https://cs.unc.edu/~anderson/papers/rtas17b.pdf">Paper</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Registration of Pathological Images</b></p>
+                    <p class="paper">Xiao Yang, Xu Han, Eunbyung Park, Stephen Aylward, Roland Kwitt, Marc Niethammer</p>
+                    <p class="paper">Simulation an Synthesis in Medical Imaging, <b>MICCAI 2016 Workshop</b></p>
+                    <p class="paper">[<a target="_blank" href="http://wwwx.cs.unc.edu/~mn/sites/default/files/yang_miccai_2016_tumor.pdf">Paper</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Learning to Decompose for Object Detection and Instance Segmentation</b></p>
+                    <p class="paper">Eunbyung Park, Alexander C. Berg</p>
+                    <p class="paper">International Conference on Learning Representations, <b>ICLR 2016 Workshop</b></p>
+                    <p class="paper">[<a target="_blank" href="http://arxiv.org/abs/1511.06449">Paper</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Combining Multiple Sources of Knowledge in Deep CNNs for Action Recognition</b></p>
+                    <p class="paper">Eunbyung Park, Xufeng Han, Tamara L. Berg, Alexander C. Berg</p>
+                    <p class="paper">IEEE Winter Conference on Applications of Computer Vision, <b>WACV 2016</b></p>
+                    <p class="paper">[<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/wacv2016_combining.pdf">Paper</a>]</p>
+            </li>
+            <li class="list-group-item">
+                    <p class="paper"><b>Visual Madlibs: Fill-in-the-blank Image Description and Question Answering</b></p>
+                    <p class="paper">Licheng Yu, Eunbyung Park, Alexander C. Berg, Tamara L. Berg</p>
+                    <p class="paper">International Conference on Computer Vision, <b>ICCV 2015</b></p>
+                    <p class="paper"> <div class="description"> [<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs.pdf">Paper</a>][<a target="_blank" href="http://tamaraberg.com/visualmadlibs/">Project Page</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/images/iccv15_madlibs.mp4">Spotlight Video</a>][<a target="_blank" href="https://www.cs.unc.edu/~eunbyung/papers/iccv15_madlibs_supp.pdf">Supplementary File</a>] </p>
+            </li>
+    </ul>
+    -->
+</div>
 </body>
 </html>
 
