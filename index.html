@@ -16,12 +16,15 @@
 </head>
 
 <body>
-<nav class="navbar navbar-inverse" style="position: fixed; right: 0;left: 0;top:0; z-index: 1;">
+<!--<div class="masthead">-->
+<!--<nav class="navbar navbar-inverse" style="position: fixed; right: 0;left: 0;top:0; z-index: 1;">-->
+    <nav class="navbar navbar-inverse" style="position: sticky; right: 0;left: 0;top:0; z-index: 1;">
     <div class="container-fluid" style="display:flex; justify-content:center; align-items:center;">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Ming Wen</a>
-        </div>
+<!--        <div class="navbar-header">-->
+<!--            <a class="navbar-brand" href="index.html">Ming Wen</a>-->
+<!--        </div>-->
         <ul class="nav navbar-nav">
+            <li><a href="index.html" style="font-size: 18px">Ming Wen</a></li>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="pair.html">Team</a></li>
             <li><a href="publication.html">Publications</a></li>
@@ -29,7 +32,9 @@
             <li><a href="service.html">Service</a></li>
         </ul>
     </div>
+<!--    <div>dsafasdf</div>-->
 </nav>
+<!--</div>-->
 
 <div id="main" role="main">
     <div class="sidebar sticky">
@@ -43,7 +48,7 @@
                 <!--            <p class="author__bio"><a href="http://www.hust.edu.cn/">Huazhong University of Science and Technology</a></p>-->
             </div>
             <div class="author__urls-wrapper">
-                <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
+<!--                 <button class="btn btn&#45;&#45;inverse">Follow</button>-->
                 <ul class="author__urls social-icons">
                     <li>
                         <div style="white-space: normal; margin-bottom: 1em;"></div>
@@ -56,15 +61,19 @@
                                                                aria-hidden="true"></i>Email</a></li>
                     <li><a href="https://scholar.google.com/citations?user=ht2MknAAAAAJ&hl=en"><i
                             class="fa fa-fw fa-graduation-cap"></i>Google Scholar</a></li>
-                    <li><a href=""><i class="ai ai-dblp ai-fw" aria-hidden="true"></i>DBLP</a></li>
+                    <li><a href=""><i class="ai ai-dblp ai-fw"></i>DBLP</a></li>
                     <li><a href=""><i class="ai ai-orcid-square ai-fw"></i>ORCID</a></li>
                 </ul>
-                <!--            <div class="author__urls_sm">-->
-                <!--                <a href="mailto:jinxutong@pku.edu.cn"><i class="fas fa-fw fa-envelope"-->
-                <!--                                                         aria-hidden="true"></i></a>-->
-                <!--                <a href="https://scholar.google.com/citations?user=C0cGtS0AAAAJ"><i-->
-                <!--                        class="fa fa-fw fa-graduation-cap"></i></a>-->
-                <!--            </div>-->
+                <div class="author__urls_sm">
+                    <a href="http://faculty.hust.edu.cn/wenming" target="blank"><i class="fa fa-fw fa-home"
+                                                                                       aria-hidden="true"></i></a>
+                    <a href="mailto:mwenaa@hust.edu.cn"><i class="fa fa-fw fa-envelope"
+                                                               aria-hidden="true"></i></a>
+                    <a href="https://scholar.google.com/citations?user=ht2MknAAAAAJ&hl=en"><i
+                            class="fa fa-fw fa-graduation-cap"></i></a>
+                    <a href=""><i class="ai ai-dblp ai-fw"></i></a>
+                    <a href=""><i class="ai ai-orcid-square ai-fw"></i></a>
+                </div>
             </div>
             <div>
                 <script type='text/javascript' id='clustrmaps'
@@ -74,7 +83,7 @@
     </div>
 
     <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork"
-             style="padding-top: 60px;z-index: 0;max-width: 900px">
+             style="z-index: 0;max-width: 900px">
         <!--  <div id="home">-->
         <!--    <div id="bio">-->
         <!--      <h1>Eunbyung Park</h1>-->
@@ -276,6 +285,5 @@
         </div>
     </article>
 </div>
-
 </body>
 </html>
