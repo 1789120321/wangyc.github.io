@@ -2491,7 +2491,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
         width: 83.0508474576%;
         float: right;
         margin-right: 0;
-        padding-left: 4.2372881356%;
+        /*padding-left: 4.2372881356%;*/
+        padding-left: 0;
         padding-right: 0%
     }
 }
@@ -3505,7 +3506,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 }
 
 .author__urls a:hover {
-    text-decoration: underline
+    /*text-decoration: underline;*/
+    text-decoration: none;
 }
 
 .author__urls_sm {
