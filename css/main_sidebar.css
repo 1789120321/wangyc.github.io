@@ -9363,3 +9363,9 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em
 }
+
+@media(max-width: 57.8125em) {
+    .map {
+        display: none;
+    }
+}

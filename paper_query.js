@@ -293,7 +293,7 @@ function paperQuery() {
                     }
                 }
 
-                result = result + "<p className=\"paper\"><b><strong><span style=\"color: #2ca25f\">[" + CI + "]</span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
+                result = result + "<p className=\"paper\"><b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
 
                 result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\">'
                     + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
@@ -305,7 +305,7 @@ function paperQuery() {
                 result = result + "</p>";
                 // <a href=" + paperInfo['URL'] + " style=\"color: black;\">
             } else if (paperInfo['entryType'] == 'INPROCEEDINGS') {
-                result = result + "<p className=\"paper\"><b><strong><span style=\"color: #2ca25f\">[" + CI + "]</span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
+                result = result + "<p className=\"paper\"><b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
 
                 result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\"> In '
                     + paperInfo['BOOKTITLE'];
@@ -318,6 +318,27 @@ function paperQuery() {
                 // <a href=" + paperInfo['URL'] + " style=\"color: black;\">
             }
 
+            // <p className="paper">[<a target="_blank" href="https://doi.org/10.1145/3582574">Paper</a>]</p>
+            result = result + "<p className=\"paper\">[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
+
+            if (sc.hasAttribute("code")) {
+                var code = sc.getAttribute("code");
+                result = result + "[<a target=\"_blank\" href=" + code + ">Code</a>]";
+            }
+            if (sc.hasAttribute("data")) {
+                var data = sc.getAttribute("data");
+                result = result + "[<a target=\"_blank\" href=" + data + ">Data</a>]";
+            }
+            if (sc.hasAttribute("benchmark")) {
+                var benchmark = sc.getAttribute("benchmark");
+                result = result + "[<a target=\"_blank\" href=" + benchmark + ">Benchmark</a>]";
+            }
+            if (sc.hasAttribute("demo")) {
+                var demo = sc.getAttribute("demo");
+                result = result + "[<a target=\"_blank\" href=" + demo + ">Demo</a>]";
+            }
+
+            result = result + "</p>";
 
             // console.log(Object.keys(paperInfo));
             // // if(paperInfo[''])
