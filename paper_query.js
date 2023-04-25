@@ -271,9 +271,10 @@ function paperQuery() {
 
             // 将指定作者加粗
             paperInfo['AUTHOR'] = paperInfo['AUTHOR'].replace(new RegExp("Ming Wen", "g"), "<b>" + "Ming Wen" + "</b>");
+            // 调整上标
+            paperInfo['AUTHOR'] = paperInfo['AUTHOR'].replace(/[#*]/g, "<sup>$&</sup>");
 
             var result = '';
-            "<p className=\"paper\"><b>" + paper + bib + "</b></p>";
             if (paperInfo['entryType'] == 'ARTICLE') {
                 // 分别保存TOSEM、TSE、EmSE简写和全称之间的映射
                 paperNameMap = {
@@ -293,58 +294,72 @@ function paperQuery() {
                     }
                 }
 
-                result = result + "<p className=\"paper\"><b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
+                // result = result + "<p className=\"paper\"><b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
+                //
+                // result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\">'
+                //     + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
+                //
+                // if (paperInfo.hasOwnProperty("PAGES")) {
+                //     result = result + ': ' + paperInfo["PAGES"];
+                // }
+                //
+                // result = result + "</p>";
 
-                result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\">'
+                result = result + "<b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
+
+                result = result + paperInfo['AUTHOR'] + '<br/>'
                     + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
                     result = result + ': ' + paperInfo["PAGES"];
                 }
 
-                result = result + "</p>";
-                // <a href=" + paperInfo['URL'] + " style=\"color: black;\">
+                result = result;
             } else if (paperInfo['entryType'] == 'INPROCEEDINGS') {
-                result = result + "<p className=\"paper\"><b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
+                // result = result + "<p className=\"paper\"><b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong></p>";
+                //
+                // result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\"> In '
+                //     + paperInfo['BOOKTITLE'];
+                //
+                // if (paperInfo.hasOwnProperty("PAGES")) {
+                //     result = result + ': ' + paperInfo["PAGES"];
+                // }
+                //
+                // result = result + "</p>";
 
-                result = result + "<p className=\"paper\">" + paperInfo['AUTHOR'] + '</p><p className=\"paper\"> In '
+                result = result + "<b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
+
+                result = result + paperInfo['AUTHOR'] + '<br/> In '
                     + paperInfo['BOOKTITLE'];
 
                 if (paperInfo.hasOwnProperty("PAGES")) {
                     result = result + ': ' + paperInfo["PAGES"];
                 }
 
-                result = result + "</p>";
-                // <a href=" + paperInfo['URL'] + " style=\"color: black;\">
+                result = result;
             }
 
-            // <p className="paper">[<a target="_blank" href="https://doi.org/10.1145/3582574">Paper</a>]</p>
-            result = result + "<p className=\"paper\">[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
-
-            if (sc.hasAttribute("code")) {
-                var code = sc.getAttribute("code");
-                result = result + "[<a target=\"_blank\" href=" + code + ">Code</a>]";
-            }
-            if (sc.hasAttribute("data")) {
-                var data = sc.getAttribute("data");
-                result = result + "[<a target=\"_blank\" href=" + data + ">Data</a>]";
-            }
-            if (sc.hasAttribute("benchmark")) {
-                var benchmark = sc.getAttribute("benchmark");
-                result = result + "[<a target=\"_blank\" href=" + benchmark + ">Benchmark</a>]";
-            }
-            if (sc.hasAttribute("demo")) {
-                var demo = sc.getAttribute("demo");
-                result = result + "[<a target=\"_blank\" href=" + demo + ">Demo</a>]";
-            }
-
-            result = result + "</p>";
-
-            // console.log(Object.keys(paperInfo));
-            // // if(paperInfo[''])
-            // console.log(paperInfo)
-            // console.log(paperInfo['TITLE'])
-
+            // result = result + "<p className=\"paper\">[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
+            //
+            // if (sc.hasAttribute("code")) {
+            //     var code = sc.getAttribute("code");
+            //     result = result + "[<a target=\"_blank\" href=" + code + ">Code</a>]";
+            // }
+            // if (sc.hasAttribute("data")) {
+            //     var data = sc.getAttribute("data");
+            //     result = result + "[<a target=\"_blank\" href=" + data + ">Data</a>]";
+            // }
+            // if (sc.hasAttribute("benchmark")) {
+            //     var benchmark = sc.getAttribute("benchmark");
+            //     result = result + "[<a target=\"_blank\" href=" + benchmark + ">Benchmark</a>]";
+            // }
+            // if (sc.hasAttribute("demo")) {
+            //     var demo = sc.getAttribute("demo");
+            //     result = result + "[<a target=\"_blank\" href=" + demo + ">Demo</a>]";
+            // }
+            //
+            // result = result + "</p>";
+            console.log(result)
             document.getElementById(bib).innerHTML = result;
         }
     };
