@@ -359,7 +359,29 @@ function paperQuery() {
             // }
             //
             // result = result + "</p>";
-            console.log(result)
+
+            result = result + "<br/>";
+            result = result + "[<a target=\"_blank\" href=" + paperInfo['URL'] + ">Paper</a>]";
+
+            if (sc.hasAttribute("code")) {
+                var code = sc.getAttribute("code");
+                result = result + "[<a target=\"_blank\" href=" + code + ">Code</a>]";
+            }
+            if (sc.hasAttribute("data")) {
+                var data = sc.getAttribute("data");
+                result = result + "[<a target=\"_blank\" href=" + data + ">Data</a>]";
+            }
+            if (sc.hasAttribute("benchmark")) {
+                var benchmark = sc.getAttribute("benchmark");
+                result = result + "[<a target=\"_blank\" href=" + benchmark + ">Benchmark</a>]";
+            }
+            if (sc.hasAttribute("demo")) {
+                var demo = sc.getAttribute("demo");
+                result = result + "[<a target=\"_blank\" href=" + demo + ">Demo</a>]";
+            }
+
+            result = result;
+            // console.log(result)
             document.getElementById(bib).innerHTML = result;
         }
     };
