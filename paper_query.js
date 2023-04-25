@@ -305,7 +305,7 @@ function paperQuery() {
                 //
                 // result = result + "</p>";
 
-                result = result + "<b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
+                result = result + "<strong><span style=\"color: blue\">[" + CI + "] </span></strong><i><b>" + paperInfo['TITLE'] + "</b></i><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
                 result = result + paperInfo['AUTHOR'] + '<br/>'
                     + paperInfo['JOURNAL'] + ', ' + paperInfo['YEAR'] + ', ' + paperInfo['VOLUME'] + '(' + paperInfo['NUMBER'] + ')';
@@ -327,7 +327,7 @@ function paperQuery() {
                 //
                 // result = result + "</p>";
 
-                result = result + "<b><strong><span style=\"color: blue\">[" + CI + "] </span></strong>" + paperInfo['TITLE'] + "</b><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
+                result = result + "<strong><span style=\"color: blue\">[" + CI + "] </span></strong><i><b>" + paperInfo['TITLE'] + "</b></i><strong style=\"color:#fc4e2a;float: right\">" + level + "</strong><br/>";
 
                 result = result + paperInfo['AUTHOR'] + '<br/> In '
                     + paperInfo['BOOKTITLE'];
