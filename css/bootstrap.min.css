@@ -5679,9 +5679,6 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
 .list-group {
     padding-left: 0;
     margin-bottom: 20px;
-
-    /*counter-reset: my-counter;*/
-    /*list-style: none;*/
 }
 
 .list-group-item {
@@ -5691,15 +5688,7 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
     margin-bottom: -1px;
     background-color: #fff;
     border: 1px solid #ddd;
-
-    /*counter-increment: my-counter;*/
 }
-
-/*.list-group-item:before {*/
-/*    !*content: counter(my-counter) ". ";*!*/
-/*    !*display: inline-block;*!*/
-/*    !*margin-right: 1px;*!*/
-/*}*/
 
 .list-group-item:first-child {
     border-top-left-radius: 4px;
