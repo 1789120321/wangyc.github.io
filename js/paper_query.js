@@ -560,9 +560,6 @@ function getOnePaperHtml(bib, paperNum) {
 }
 
 function allPaperQuery() {
-    var repoOwner = '1789120321';
-    var repoName = 'wangyc1789';
-    var accessToken = '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';
     // var repoOwner = 'justinwm';
     // var repoName = 'justinwm.github.io';
     // var accessToken = '';
