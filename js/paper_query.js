@@ -390,7 +390,7 @@ function onePaperQuery() {
     xhr.send();
 }
 
-function getOnePaperHtml(bib, paperNum) {
+function getOnePaperHtml(bib, pos, paperNum) {
     return new Promise(function (resolve, reject) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', bib, true);
@@ -496,48 +496,13 @@ function getOnePaperHtml(bib, paperNum) {
 
                 result = result + "</li>";
 
-                paperHtmls.push(result);
+                // paperHtmls.push(result);
+                paperHtmls[pos] = result;
 
                 paperHtmlCounter++;
                 if (paperHtmlCounter == paperNum) {
 
-                    paperHtmls.sort(function (a, b) {
-                        var priorityA = Infinity;
-                        var priorityB = Infinity;
-
-                        for(var i = 0;i < paperPriority.length;i ++){
-                            if(a.toUpperCase().includes(paperPriority[i])){
-                                priorityA = i;
-                                break
-                            }
-                        }
-
-                        for(var i = 0;i < paperPriority.length;i ++){
-                            if(b.toUpperCase().includes(paperPriority[i])){
-                                priorityB = i
-                                break
-                            }
-                        }
-                        // console.log(priorityA)
-                        // console.log(priorityB)
-
-                        // 按照优先级进行排序
-                        if (priorityA < priorityB) {
-                            return -1;
-                        } else if (priorityA > priorityB) {
-                            return 1;
-                        } else {
-                            return 0;
-                        }
-                    })
-
-                    paperHtmls.sort(function (a, b) {
-                        var yearA = parseInt(a.match(/\b\d{4}\b/)[0]);
-                        var yearB = parseInt(b.match(/\b\d{4}\b/)[0]);
-                        return -(yearA - yearB);
-                    });
-
-                    for (var i = 0; i < paperHtmls.length; i++) {
+                    for (var i = paperHtmls.length-1; i > 0; i--) {
                         // console.log(parseInt(paperHtmls[i].match(/\b\d{4}\b/)[0]))
                         // // console.log(dataArray[i])
                         // var j=0;
@@ -552,6 +517,58 @@ function getOnePaperHtml(bib, paperNum) {
 
                         document.getElementById('allBibPaper').innerHTML += paperHtmls[i];
                     }
+
+                    // paperHtmls.sort(function (a, b) {
+                    //     var priorityA = Infinity;
+                    //     var priorityB = Infinity;
+                    //
+                    //     for(var i = 0;i < paperPriority.length;i ++){
+                    //         if(a.toUpperCase().includes(paperPriority[i])){
+                    //             priorityA = i;
+                    //             break
+                    //         }
+                    //     }
+                    //
+                    //     for(var i = 0;i < paperPriority.length;i ++){
+                    //         if(b.toUpperCase().includes(paperPriority[i])){
+                    //             priorityB = i
+                    //             break
+                    //         }
+                    //     }
+                    //     // console.log(priorityA)
+                    //     // console.log(priorityB)
+                    //
+                    //     // 按照优先级进行排序
+                    //     if (priorityA < priorityB) {
+                    //         return -1;
+                    //     } else if (priorityA > priorityB) {
+                    //         return 1;
+                    //     } else {
+                    //         return 0;
+                    //     }
+                    // })
+                    //
+                    // paperHtmls.sort(function (a, b) {
+                    //     var yearA = parseInt(a.match(/\b\d{4}\b/)[0]);
+                    //     var yearB = parseInt(b.match(/\b\d{4}\b/)[0]);
+                    //     return -(yearA - yearB);
+                    // });
+                    //
+                    // for (var i = 0; i < paperHtmls.length; i++) {
+                    //     // console.log(parseInt(paperHtmls[i].match(/\b\d{4}\b/)[0]))
+                    //     // // console.log(dataArray[i])
+                    //     // var j=0;
+                    //     // for(j = 0;j < paperPriority.length;j ++){
+                    //     //     if(paperHtmls[i].toUpperCase().includes(paperPriority[j])){
+                    //     //         console.log(paperPriority[j])
+                    //     //         break
+                    //     //     }
+                    //     // }
+                    //     // if(j == paperPriority.length)
+                    //     //     console.log('other')
+                    //
+                    //     document.getElementById('allBibPaper').innerHTML += paperHtmls[i];
+                    // }
                 }
             }
         };
@@ -564,8 +581,8 @@ function allPaperQuery() {
     // var repoName = 'justinwm.github.io';
     // var accessToken = '';
 
-    fetch('https://api.github.com/repos/justinwm/justinwm.github.io/contents/paper/')
-    // fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/')
+    // fetch('https://api.github.com/repos/justinwm/justinwm.github.io/contents/paper/')
+    fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/')
     // fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/', {
     //     headers: {
     //         'Authorization': 'token ' + accessToken
@@ -575,10 +592,18 @@ function allPaperQuery() {
         .then(data => {
             const fileList = data.filter(item => item.type === 'file');
             const bibFiles = fileList.filter(item => item.name.endsWith('.bib'));
+            paperHtmls = new Array(bibFiles.length + 1);
 
             for (var i = 0; i < bibFiles.length; i++) {
                 var bib = bibFiles[i].path;
-                getOnePaperHtml(bib, bibFiles.length);
+
+                const index = bib.replace(new RegExp('paper/'),'').indexOf('_');
+                const posStr = bib.replace(new RegExp('paper/'),'').substring(0, index); // 截取从开头到第一个 "_" 之前的子字符串
+                const pos = parseFloat(posStr); // 将截取的字符串转换为数字
+                // console.log(bib)
+                // console.log(bib.replace(new RegExp('paper/'),''))
+                // console.log(pos)
+                getOnePaperHtml(bib, pos,bibFiles.length);
             }
         })
         .catch(error => {
@@ -587,17 +612,19 @@ function allPaperQuery() {
 }
 
 var paperHtmlCounter = 0;
-var paperHtmls = [];
+// var paperHtmls = [];
+let paperHtmls; // 全局变量
+
 // 定义会议名称的优先级，paperPriority = ['ISSTA','ICSE'], issta的论文就会排到icse的前面
-var paperPriority = [
-    'ISSTA',
-    'ICSE',
-    'FSE',
-    // 'TSE',
-    // 'TOSEM',
-    // 'SANER',
-    // 'ASE',
-    // 'EMSE',
-    // 'ISSRE',
-];
+// var paperPriority = [
+//     'ISSTA',
+//     'ICSE',
+//     'FSE',
+//     // 'TSE',
+//     // 'TOSEM',
+//     // 'SANER',
+//     // 'ASE',
+//     // 'EMSE',
+//     // 'ISSRE',
+// ];
 allPaperQuery();
