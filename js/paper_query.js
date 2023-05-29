@@ -577,13 +577,22 @@ function getOnePaperHtml(bib, pos, paperNum) {
 }
 
 function allPaperQuery() {
-    // var repoOwner = 'justinwm';
-    // var repoName = 'justinwm.github.io';
+    var repoOwner;
+    var repoName;
     // var accessToken = '';
 
-    const absoluteUrl = window.location.href;
+    const url = window.location.href;
+    const regex = /^https:\/\/github\.com\/([^/]+)\/([^/]+).*$/;
+    const match = url.match(regex);
 
-    console.log('绝对地址:', absoluteUrl);
+    if (match) {
+        const repoOwner = match[1];
+        const repoName = match[2];
+        console.log('GitHub 用户名:', username);
+        console.log('GitHub 项目名:', projectName);
+    } else {
+        console.log('无法提取 GitHub 用户名和项目名。');
+    }
 
     console.log('adfafadffd')
 
