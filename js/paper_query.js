@@ -581,6 +581,10 @@ function allPaperQuery() {
     // var repoName = 'justinwm.github.io';
     // var accessToken = '';
 
+    const absoluteUrl = window.location.href;
+
+    console.log('绝对地址:', absoluteUrl);
+
     // fetch('https://api.github.com/repos/justinwm/justinwm.github.io/contents/paper/')
     fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/')
     // fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/', {
