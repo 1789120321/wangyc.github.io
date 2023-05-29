@@ -576,12 +576,24 @@ function getOnePaperHtml(bib, pos, paperNum) {
     })
 }
 
+// 从当前页面的 URL 中提取 GitHub 仓库地址
+function getGitHubRepoUrl() {
+    const repoElement = document.querySelector('meta[property="og:url"]');
+    if (!repoElement) {
+        return null;
+    }
+
+    const repoUrl = repoElement.getAttribute('content');
+    return repoUrl;
+}
+
 function allPaperQuery() {
     var repoOwner;
     var repoName;
     // var accessToken = '';
 
     const url = window.location.href;
+    console.log(url)
     const regex = /^https:\/\/github\.com\/([^/]+)\/([^/]+).*$/;
     const match = url.match(regex);
 
@@ -593,6 +605,28 @@ function allPaperQuery() {
     } else {
         console.log('无法提取 GitHub 用户名和项目名。');
     }
+
+    const repoUrl = getGitHubRepoUrl();
+    if (!repoUrl) {
+        console.log('无法获取 GitHub 仓库信息。');
+        return;
+    }
+
+    fetch(repoUrl, {
+        headers: {
+            Accept: 'application/vnd.github.v3+json',
+        },
+    })
+        .then(response => response.json())
+        .then(data => {
+            const username = data.owner.login;
+            const projectName = data.name;
+            console.log('GitHub 用户名:', username);
+            console.log('GitHub 项目名:', projectName);
+        })
+        .catch(error => {
+            console.error('获取 GitHub 仓库信息时出错:', error);
+        });
 
     console.log('adfafadffd')
 
