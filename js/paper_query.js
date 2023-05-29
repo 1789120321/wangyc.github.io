@@ -585,6 +585,8 @@ function allPaperQuery() {
 
     console.log('绝对地址:', absoluteUrl);
 
+    console.log('adfafadffd')
+
     // fetch('https://api.github.com/repos/justinwm/justinwm.github.io/contents/paper/')
     fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/')
     // fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/', {
