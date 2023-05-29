@@ -588,8 +588,8 @@ function allPaperQuery() {
     if (match) {
         const repoOwner = match[1];
         const repoName = match[2];
-        console.log('GitHub 用户名:', username);
-        console.log('GitHub 项目名:', projectName);
+        console.log('GitHub 用户名:', repoOwner);
+        console.log('GitHub 项目名:', repoName);
     } else {
         console.log('无法提取 GitHub 用户名和项目名。');
     }
