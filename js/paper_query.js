@@ -588,47 +588,9 @@ function getGitHubRepoUrl() {
 }
 
 function allPaperQuery() {
-    var repoOwner;
-    var repoName;
+    // var repoOwner;
+    // var repoName;
     // var accessToken = '';
-
-    const url = window.location.href;
-    console.log(url)
-    const regex = /^https:\/\/github\.com\/([^/]+)\/([^/]+).*$/;
-    const match = url.match(regex);
-
-    if (match) {
-        const repoOwner = match[1];
-        const repoName = match[2];
-        console.log('GitHub 用户名:', repoOwner);
-        console.log('GitHub 项目名:', repoName);
-    } else {
-        console.log('无法提取 GitHub 用户名和项目名。');
-    }
-
-    const repoUrl = getGitHubRepoUrl();
-    if (!repoUrl) {
-        console.log('无法获取 GitHub 仓库信息。');
-        return;
-    }
-
-    fetch(repoUrl, {
-        headers: {
-            Accept: 'application/vnd.github.v3+json',
-        },
-    })
-        .then(response => response.json())
-        .then(data => {
-            const username = data.owner.login;
-            const projectName = data.name;
-            console.log('GitHub 用户名:', username);
-            console.log('GitHub 项目名:', projectName);
-        })
-        .catch(error => {
-            console.error('获取 GitHub 仓库信息时出错:', error);
-        });
-
-    console.log('adfafadffd')
 
     // fetch('https://api.github.com/repos/justinwm/justinwm.github.io/contents/paper/')
     fetch('https://api.github.com/repos/1789120321/wangyc1789/contents/paper/')
